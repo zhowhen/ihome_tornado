@@ -1,0 +1,1155 @@
+[E 200410 21:20:43 PassPort:8] error msg
+[W 200410 21:20:43 PassPort:10] warning msg
+[I 200410 23:00:34 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:01:01 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:01:21 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:02:07 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:02:16 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:02:29 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:02:52 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:03:05 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:18:06 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[E 200410 23:18:20 VerifyCode:27] 'Application' object has no attribute 'reids'
+[I 200410 23:18:20 web:2162] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 25.00ms
+[W 200410 23:18:21 web:2162] 404 GET /favicon.ico (127.0.0.1) 4.00ms
+[I 200410 23:18:27 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:19:44 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:19:55 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:20:01 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:20:05 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[W 200410 23:20:16 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:20:16 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.00ms
+[I 200410 23:20:23 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[W 200410 23:20:26 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:20:26 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 2.00ms
+[W 200410 23:20:27 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:20:27 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.00ms
+[W 200410 23:20:36 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:20:36 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 0.00ms
+[W 200410 23:20:57 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:20:57 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.00ms
+[I 200410 23:21:37 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:21:51 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200410 23:22:06 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[W 200410 23:22:39 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:22:39 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 1.00ms
+[W 200410 23:22:43 web:1667] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1): Missing argument 
+[W 200410 23:22:43 web:2162] 400 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 2.00ms
+[E 200410 23:23:38 VerifyCode:27] 'Application' object has no attribute 'reids'
+[I 200410 23:23:38 web:2162] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 23.00ms
+[E 200410 23:23:43 VerifyCode:27] 'Application' object has no attribute 'reids'
+[I 200410 23:23:43 web:2162] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 11.00ms
+[E 200410 23:25:11 VerifyCode:27] 'Application' object has no attribute 'redis'
+[I 200410 23:25:11 web:2162] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 25.00ms
+[I 200410 23:25:58 web:2162] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 29.00ms
+[I 200410 23:28:20 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:28:35 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:28:40 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:28:45 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:28:50 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:28:56 autoreload:199] D:\ihome\url.py modified; restarting server
+[E 200410 23:44:43 PassPort:8] error msg
+[D 200410 23:44:43 PassPort:9] debug msg
+[W 200410 23:44:43 PassPort:10] warning msg
+[I 200410 23:44:43 PassPort:11] info msg
+[I 200410 23:44:43 web:2162] 304 GET / (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET / (127.0.0.1) 412.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 13.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 5.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 1.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 3.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 4.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/js/template.js (127.0.0.1) 4.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 50.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.00ms
+[I 200410 23:45:04 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 8.00ms
+[W 200410 23:45:04 web:2162] 404 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200410 23:45:04 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200410 23:45:07 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200410 23:45:07 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 29.00ms
+[I 200410 23:45:21 web:2162] 200 GET /search.html?aid=&aname=&sd=&ed= (127.0.0.1) 2.00ms
+[I 200410 23:45:21 web:2162] 200 GET /static/css/ihome/search.css (127.0.0.1) 2.00ms
+[I 200410 23:45:21 web:2162] 200 GET /static/js/ihome/search.js (127.0.0.1) 2.00ms
+[W 200410 23:45:21 web:2162] 404 GET /api/house/area (127.0.0.1) 1.00ms
+[W 200410 23:45:24 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200410 23:45:24 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200410 23:45:24 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200410 23:46:41 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200410 23:46:41 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200410 23:46:41 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200410 23:46:41 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[I 200410 23:46:58 web:2162] 304 GET / (127.0.0.1) 2.00ms
+[W 200410 23:46:58 web:2162] 404 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200410 23:46:58 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200410 23:46:58 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[I 200410 23:47:37 web:2162] 304 GET / (127.0.0.1) 512.00ms
+[W 200410 23:47:37 web:2162] 404 GET /api/check_login (127.0.0.1) 4.00ms
+[W 200410 23:47:37 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200410 23:47:37 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200410 23:50:10 web:2162] 304 GET / (127.0.0.1) 2.00ms
+[W 200410 23:50:10 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200410 23:50:10 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200410 23:51:10 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200410 23:51:26 web:2162] 304 GET / (127.0.0.1) 458.00ms
+[W 200410 23:51:26 web:2162] 404 GET /api/check_login (127.0.0.1) 4.00ms
+[W 200410 23:51:26 web:2162] 404 GET /api/house/index (127.0.0.1) 3.00ms
+[I 200410 23:51:50 web:2162] 200 GET / (127.0.0.1) 2.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 1.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 2.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 5.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 2.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 6.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 10.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 7.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/js/template.js (127.0.0.1) 2.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 1.00ms
+[I 200410 23:51:50 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 2.00ms
+[I 200410 23:51:51 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 3.00ms
+[W 200410 23:51:51 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200410 23:51:51 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200410 23:51:51 web:2162] 200 GET /favicon.ico (127.0.0.1) 4.00ms
+[I 200410 23:51:55 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200410 23:51:55 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200410 23:51:55 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200410 23:51:58 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200410 23:51:58 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 27.00ms
+[I 200410 23:52:08 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200410 23:52:09 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200410 23:52:09 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200410 23:52:09 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200410 23:55:33 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200410 23:55:34 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200410 23:55:34 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200410 23:55:34 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200411 00:01:22 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200411 00:01:22 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:01:22 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200411 00:01:22 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200411 00:02:07 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200411 00:02:07 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:02:07 web:2162] 404 GET /api/house/index (127.0.0.1) 3.00ms
+[W 200411 00:02:07 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200411 00:02:13 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200411 00:02:13 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:02:13 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200411 00:02:13 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200411 00:03:17 web:2162] 200 GET /index.html (127.0.0.1) 2.00ms
+[W 200411 00:03:17 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200411 00:03:17 web:2162] 404 GET /api/house/index (127.0.0.1) 3.00ms
+[W 200411 00:03:17 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200411 00:03:35 web:2162] 304 GET /index.html (127.0.0.1) 1.00ms
+[W 200411 00:03:35 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:03:35 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200411 00:03:35 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200411 00:04:51 web:2162] 200 GET /index.html (127.0.0.1) 555.00ms
+[W 200411 00:04:51 web:2162] 404 GET /api/check_login (127.0.0.1) 4.00ms
+[W 200411 00:04:51 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200411 00:04:51 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200411 00:04:56 web:2162] 304 GET /index.html (127.0.0.1) 0.00ms
+[W 200411 00:04:56 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:56 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200411 00:04:57 web:2162] 304 GET /index.html (127.0.0.1) 1.00ms
+[W 200411 00:04:57 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:57 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200411 00:04:58 web:2162] 304 GET /index.html (127.0.0.1) 2.00ms
+[W 200411 00:04:58 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:58 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200411 00:04:58 web:2162] 304 GET /index.html (127.0.0.1) 2.00ms
+[W 200411 00:04:58 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:58 web:2162] 404 GET /api/house/index (127.0.0.1) 3.00ms
+[I 200411 00:04:58 web:2162] 304 GET /index.html (127.0.0.1) 2.00ms
+[W 200411 00:04:58 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200411 00:04:58 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200411 00:04:59 web:2162] 304 GET /index.html (127.0.0.1) 1.00ms
+[W 200411 00:04:59 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:59 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200411 00:04:59 web:2162] 304 GET /index.html (127.0.0.1) 1.00ms
+[W 200411 00:04:59 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:59 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200411 00:04:59 web:2162] 304 GET /index.html (127.0.0.1) 3.00ms
+[W 200411 00:04:59 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:04:59 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200411 00:05:50 web:2162] 404 GET /api/check_login (127.0.0.1) 5.00ms
+[W 200411 00:05:50 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200411 00:05:51 web:2162] 200 GET /favicon.ico (127.0.0.1) 421.00ms
+[W 200411 00:05:54 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 200411 00:06:04 web:2162] 404 GET /api/house/area (127.0.0.1) 2.00ms
+[W 200411 00:06:06 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:06:06 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200411 00:07:14 web:2162] 404 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200411 00:07:14 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200411 00:07:16 web:2162] 404 GET /api/house/area (127.0.0.1) 2.00ms
+[W 200411 00:07:18 web:2162] 404 GET /api/house/list2?aid=&sd=&ed=&sk=new&p=1 (127.0.0.1) 5.00ms
+[W 200411 00:07:20 web:2162] 404 GET /api/house/list2?aid=&sd=&ed=&sk=new&p=1 (127.0.0.1) 3.00ms
+[W 200411 00:07:24 web:2162] 404 GET /api/house/list2?aid=&sd=&ed=&sk=price-des&p=1 (127.0.0.1) 2.00ms
+[W 200411 00:07:25 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200411 00:07:25 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200411 00:08:02 web:2162] 200 GET /register.html (127.0.0.1) 1.00ms
+[I 200411 00:08:02 web:2162] 200 GET /static/css/ihome/register.css (127.0.0.1) 2.00ms
+[I 200411 00:08:02 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.00ms
+[I 200411 00:08:02 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=f2d27688-fa78-47f1-bb62-dbcbecc7ac20 (127.0.0.1) 28.00ms
+[E 200411 00:08:04 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:04 web:2162] 200 GET /api/imagecode?pcodeid=f2d27688-fa78-47f1-bb62-dbcbecc7ac20&codeid=ab897978-65ba-4407-b684-b664380a2153 (127.0.0.1) 15.00ms
+[E 200411 00:08:05 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:05 web:2162] 200 GET /api/imagecode?pcodeid=ab897978-65ba-4407-b684-b664380a2153&codeid=4a70057c-f011-41dc-b884-458fabbd5be5 (127.0.0.1) 16.00ms
+[E 200411 00:08:05 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:05 web:2162] 200 GET /api/imagecode?pcodeid=4a70057c-f011-41dc-b884-458fabbd5be5&codeid=5ea14c25-2609-4afa-870d-19dbfd2c8b5f (127.0.0.1) 14.00ms
+[E 200411 00:08:05 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:05 web:2162] 200 GET /api/imagecode?pcodeid=5ea14c25-2609-4afa-870d-19dbfd2c8b5f&codeid=660cf0d8-0b66-48c6-992d-83b7809c6b33 (127.0.0.1) 12.00ms
+[E 200411 00:08:07 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:07 web:2162] 200 GET /api/imagecode?pcodeid=660cf0d8-0b66-48c6-992d-83b7809c6b33&codeid=63ce3823-a06d-473b-8c5b-4eaa38635d15 (127.0.0.1) 13.00ms
+[E 200411 00:08:07 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:07 web:2162] 200 GET /api/imagecode?pcodeid=63ce3823-a06d-473b-8c5b-4eaa38635d15&codeid=57fea6cf-2493-420d-adad-a69182422376 (127.0.0.1) 11.00ms
+[E 200411 00:08:07 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:07 web:2162] 200 GET /api/imagecode?pcodeid=57fea6cf-2493-420d-adad-a69182422376&codeid=b519cf3c-bfa6-40b5-8ecd-6f98d9484672 (127.0.0.1) 16.00ms
+[E 200411 00:08:09 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:09 web:2162] 200 GET /api/imagecode?pcodeid=b519cf3c-bfa6-40b5-8ecd-6f98d9484672&codeid=08e42f32-8aef-4ada-a4f1-2354881b4423 (127.0.0.1) 11.00ms
+[E 200411 00:08:09 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:09 web:2162] 200 GET /api/imagecode?pcodeid=08e42f32-8aef-4ada-a4f1-2354881b4423&codeid=2d0f759b-ed50-438e-a2d3-021bfe53d7b0 (127.0.0.1) 11.00ms
+[E 200411 00:08:09 VerifyCode:19] 'Redis' object has no attribute 'delte'
+[I 200411 00:08:09 web:2162] 200 GET /api/imagecode?pcodeid=2d0f759b-ed50-438e-a2d3-021bfe53d7b0&codeid=015f035a-6f3c-4ed3-bb6b-6c4b53bc38a2 (127.0.0.1) 15.00ms
+[I 200411 00:08:34 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200411 00:08:35 web:2162] 200 GET /api/imagecode?pcodeid=2315220f-2eb9-4f96-97a5-94b112cfd579&codeid=00d09fc7-bd4d-428a-bcbd-676fc1ae1475 (127.0.0.1) 20.00ms
+[I 200411 00:08:35 web:2162] 200 GET /api/imagecode?pcodeid=00d09fc7-bd4d-428a-bcbd-676fc1ae1475&codeid=fb4ee03b-7e38-4785-99e4-a392cb1126ca (127.0.0.1) 8.00ms
+[I 200411 00:08:35 web:2162] 200 GET /api/imagecode?pcodeid=fb4ee03b-7e38-4785-99e4-a392cb1126ca&codeid=921aca73-2a3a-47c2-8bc0-75dbcd846538 (127.0.0.1) 8.00ms
+[I 200411 00:08:35 web:2162] 200 GET /api/imagecode?pcodeid=921aca73-2a3a-47c2-8bc0-75dbcd846538&codeid=f2217707-baf1-4e75-80c1-b49c5dcf3419 (127.0.0.1) 8.00ms
+[I 200411 00:08:36 web:2162] 200 GET /api/imagecode?pcodeid=f2217707-baf1-4e75-80c1-b49c5dcf3419&codeid=0675a74d-691a-4d7c-8011-3c8f418bb866 (127.0.0.1) 11.00ms
+[I 200411 00:08:54 web:2162] 200 GET /api/imagecode?pcodeid=0675a74d-691a-4d7c-8011-3c8f418bb866&codeid=5588853e-c053-4bec-b061-9dae43d31781 (127.0.0.1) 10.00ms
+[I 200411 00:08:54 web:2162] 200 GET /api/imagecode?pcodeid=5588853e-c053-4bec-b061-9dae43d31781&codeid=89af3e4b-b897-448c-aeda-a06df77717c7 (127.0.0.1) 8.00ms
+[I 200411 00:08:55 web:2162] 200 GET /api/imagecode?pcodeid=89af3e4b-b897-448c-aeda-a06df77717c7&codeid=da1e182a-8a08-400d-836c-2010e36adbc4 (127.0.0.1) 8.00ms
+[I 200411 00:08:55 web:2162] 200 GET /api/imagecode?pcodeid=da1e182a-8a08-400d-836c-2010e36adbc4&codeid=522f6a95-010c-4fd3-a816-154febfe7b4d (127.0.0.1) 21.00ms
+[I 200411 00:08:55 web:2162] 200 GET /api/imagecode?pcodeid=522f6a95-010c-4fd3-a816-154febfe7b4d&codeid=b1bd4b0d-78ba-4af1-892f-d8854ebf652f (127.0.0.1) 15.00ms
+[I 200411 00:08:55 web:2162] 200 GET /api/imagecode?pcodeid=b1bd4b0d-78ba-4af1-892f-d8854ebf652f&codeid=63156280-16e9-404a-8fdb-e8ff8cc9b53a (127.0.0.1) 16.00ms
+[I 200411 00:18:49 web:2162] 304 GET /register.html (127.0.0.1) 488.00ms
+[I 200411 00:18:49 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.00ms
+[I 200411 00:18:49 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=0b12f48f-a979-481d-b6f6-7521a3b596db (127.0.0.1) 30.00ms
+[I 200411 00:18:49 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[I 200411 00:19:09 web:2162] 200 GET /api/imagecode?pcodeid=0b12f48f-a979-481d-b6f6-7521a3b596db&codeid=f4a6b256-75e6-4166-8c5b-b26263d83ac0 (127.0.0.1) 19.00ms
+[I 200411 00:19:29 web:2162] 200 GET /api/imagecode?pcodeid=f4a6b256-75e6-4166-8c5b-b26263d83ac0&codeid=05c2abf0-62e0-4a98-8b5a-385c6ba8dbd1 (127.0.0.1) 20.00ms
+[I 200411 00:19:50 web:2162] 200 GET /api/imagecode?pcodeid=05c2abf0-62e0-4a98-8b5a-385c6ba8dbd1&codeid=36431dd0-1a76-4b8c-ad1e-87d9b542c1d6 (127.0.0.1) 22.00ms
+[I 200411 00:19:50 web:2162] 200 GET /api/imagecode?pcodeid=36431dd0-1a76-4b8c-ad1e-87d9b542c1d6&codeid=f19c1669-1c90-40a5-8e57-381c153d29ee (127.0.0.1) 19.00ms
+[I 200411 00:19:50 web:2162] 200 GET /api/imagecode?pcodeid=f19c1669-1c90-40a5-8e57-381c153d29ee&codeid=03a72284-7416-4887-928f-70489549eaa4 (127.0.0.1) 20.00ms
+[I 200411 00:19:51 web:2162] 200 GET /api/imagecode?pcodeid=03a72284-7416-4887-928f-70489549eaa4&codeid=308f8d21-5eda-449f-b222-cd6291d7d0e2 (127.0.0.1) 23.00ms
+[I 200411 00:19:51 web:2162] 200 GET /api/imagecode?pcodeid=308f8d21-5eda-449f-b222-cd6291d7d0e2&codeid=4f50cd93-c2ff-4db1-9575-d9f3e2ab26b4 (127.0.0.1) 20.00ms
+[I 200411 00:19:51 web:2162] 200 GET /api/imagecode?pcodeid=4f50cd93-c2ff-4db1-9575-d9f3e2ab26b4&codeid=3a69670d-2335-4ea7-8b12-921dedfee38b (127.0.0.1) 18.00ms
+[I 200411 00:19:51 web:2162] 200 GET /api/imagecode?pcodeid=3a69670d-2335-4ea7-8b12-921dedfee38b&codeid=692d02b4-2403-4846-a014-01a21111176e (127.0.0.1) 17.00ms
+[I 200411 00:19:52 web:2162] 200 GET /api/imagecode?pcodeid=692d02b4-2403-4846-a014-01a21111176e&codeid=927bfb06-5c5d-4d00-a62f-dcedf908525c (127.0.0.1) 18.00ms
+[I 200411 00:19:52 web:2162] 200 GET /api/imagecode?pcodeid=927bfb06-5c5d-4d00-a62f-dcedf908525c&codeid=58e69624-d4e8-49d6-9489-8a1e63e2f591 (127.0.0.1) 14.00ms
+[I 200411 00:19:52 web:2162] 200 GET /api/imagecode?pcodeid=58e69624-d4e8-49d6-9489-8a1e63e2f591&codeid=845bd178-615e-48b7-9af4-720e3ce4c15b (127.0.0.1) 20.00ms
+[I 200411 00:21:04 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200411 00:21:17 web:2162] 200 GET /api/imagecode?pcodeid=845bd178-615e-48b7-9af4-720e3ce4c15b&codeid=61cc1fa0-cc51-4db0-80b5-8ad6eec4ef1c (127.0.0.1) 58.00ms
+[I 200411 00:21:17 web:2162] 200 GET /api/imagecode?pcodeid=61cc1fa0-cc51-4db0-80b5-8ad6eec4ef1c&codeid=df002273-fab8-489d-9389-97d94eb255f3 (127.0.0.1) 21.00ms
+[I 200411 00:21:18 web:2162] 200 GET /api/imagecode?pcodeid=df002273-fab8-489d-9389-97d94eb255f3&codeid=ae41e94d-c79c-47cc-885e-ba3c03683002 (127.0.0.1) 19.00ms
+[I 200411 00:21:18 web:2162] 200 GET /api/imagecode?pcodeid=ae41e94d-c79c-47cc-885e-ba3c03683002&codeid=9f630481-00b1-4f4f-977b-8878a466afe2 (127.0.0.1) 21.00ms
+[I 200411 00:21:18 web:2162] 200 GET /api/imagecode?pcodeid=9f630481-00b1-4f4f-977b-8878a466afe2&codeid=8d61c5d2-5d3c-4fc8-aaa8-6760781096ac (127.0.0.1) 24.00ms
+[I 200411 00:21:18 web:2162] 200 GET /api/imagecode?pcodeid=8d61c5d2-5d3c-4fc8-aaa8-6760781096ac&codeid=efb5f30a-b5f2-4c6d-af7b-a22064d5d467 (127.0.0.1) 13.00ms
+[I 200411 00:21:40 web:2162] 200 GET /api/imagecode?pcodeid=efb5f30a-b5f2-4c6d-af7b-a22064d5d467&codeid=3c6d5a25-9e9a-4b6b-92af-e8ea0be113ac (127.0.0.1) 21.00ms
+[I 200411 00:21:40 web:2162] 200 GET /api/imagecode?pcodeid=3c6d5a25-9e9a-4b6b-92af-e8ea0be113ac&codeid=0740a77d-219e-43b4-a309-189329b15702 (127.0.0.1) 19.00ms
+[I 200411 00:21:41 web:2162] 200 GET /api/imagecode?pcodeid=0740a77d-219e-43b4-a309-189329b15702&codeid=db4c0aaa-e816-4c2e-a3b1-e3e6bec4f26b (127.0.0.1) 19.00ms
+[I 200411 00:21:41 web:2162] 200 GET /api/imagecode?pcodeid=db4c0aaa-e816-4c2e-a3b1-e3e6bec4f26b&codeid=02f99812-5da7-4803-8541-638b39ceaa77 (127.0.0.1) 20.00ms
+[I 200411 00:21:41 web:2162] 200 GET /api/imagecode?pcodeid=02f99812-5da7-4803-8541-638b39ceaa77&codeid=7a0899ae-b8ef-4ce2-a7b3-834b9bb5f2cb (127.0.0.1) 13.00ms
+[I 200411 00:21:41 web:2162] 200 GET /api/imagecode?pcodeid=7a0899ae-b8ef-4ce2-a7b3-834b9bb5f2cb&codeid=3a41f7fa-1026-4519-828e-3ad4cede178d (127.0.0.1) 17.00ms
+[I 200411 00:21:41 web:2162] 200 GET /api/imagecode?pcodeid=3a41f7fa-1026-4519-828e-3ad4cede178d&codeid=5182a8de-9a03-4884-bb76-6bb9fd18b2ec (127.0.0.1) 18.00ms
+[I 200411 00:21:41 web:2162] 200 GET /api/imagecode?pcodeid=5182a8de-9a03-4884-bb76-6bb9fd18b2ec&codeid=f467adce-4417-469e-a4ab-8edd7050c3b7 (127.0.0.1) 13.00ms
+[I 200411 00:21:42 web:2162] 200 GET /api/imagecode?pcodeid=f467adce-4417-469e-a4ab-8edd7050c3b7&codeid=7f36c185-0b40-4bcc-b3bf-9f130720c793 (127.0.0.1) 12.00ms
+[I 200411 00:21:42 web:2162] 200 GET /api/imagecode?pcodeid=7f36c185-0b40-4bcc-b3bf-9f130720c793&codeid=4fd9dad8-b291-4267-858e-6899fecdc0b4 (127.0.0.1) 15.00ms
+[I 200411 23:59:49 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 608.00ms
+[E 200411 23:59:49 web:1670] Uncaught exception GET /api/imagecode?pcodeid=&codeid=9267a1d2-42fa-4235-8f20-8e737297fa0b (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?pcodeid=&codeid=9267a1d2-42fa-4235-8f20-8e737297fa0b', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1569, in _execute
+        result = self.prepare()
+      File "D:\ihome\handlers\BaseHandler.py", line 20, in prepare
+        if self.request.headers.get('Content-Type', '').startwith('application/json'):
+    AttributeError: 'str' object has no attribute 'startwith'
+[E 200411 23:59:49 web:2162] 500 GET /api/imagecode?pcodeid=&codeid=9267a1d2-42fa-4235-8f20-8e737297fa0b (127.0.0.1) 66.00ms
+[E 200411 23:59:51 web:1670] Uncaught exception GET /api/imagecode?pcodeid=9267a1d2-42fa-4235-8f20-8e737297fa0b&codeid=030c98ee-10e3-4a31-a531-22490876e623 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?pcodeid=9267a1d2-42fa-4235-8f20-8e737297fa0b&codeid=030c98ee-10e3-4a31-a531-22490876e623', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1569, in _execute
+        result = self.prepare()
+      File "D:\ihome\handlers\BaseHandler.py", line 20, in prepare
+        if self.request.headers.get('Content-Type', '').startwith('application/json'):
+    AttributeError: 'str' object has no attribute 'startwith'
+[E 200411 23:59:51 web:2162] 500 GET /api/imagecode?pcodeid=9267a1d2-42fa-4235-8f20-8e737297fa0b&codeid=030c98ee-10e3-4a31-a531-22490876e623 (127.0.0.1) 2.00ms
+[E 200411 23:59:52 web:1670] Uncaught exception GET /api/imagecode?pcodeid=030c98ee-10e3-4a31-a531-22490876e623&codeid=5955cbdd-62cf-41ba-8d77-62bba6043243 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?pcodeid=030c98ee-10e3-4a31-a531-22490876e623&codeid=5955cbdd-62cf-41ba-8d77-62bba6043243', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1569, in _execute
+        result = self.prepare()
+      File "D:\ihome\handlers\BaseHandler.py", line 20, in prepare
+        if self.request.headers.get('Content-Type', '').startwith('application/json'):
+    AttributeError: 'str' object has no attribute 'startwith'
+[E 200411 23:59:52 web:2162] 500 GET /api/imagecode?pcodeid=030c98ee-10e3-4a31-a531-22490876e623&codeid=5955cbdd-62cf-41ba-8d77-62bba6043243 (127.0.0.1) 2.00ms
+[I 200412 00:00:32 web:2162] 304 GET /register.html (127.0.0.1) 546.00ms
+[I 200412 00:00:32 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=f0b3edf1-f6e1-47b6-ac94-e2ea009d8798 (127.0.0.1) 268.00ms
+[I 200412 00:00:32 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 00:00:33 web:2162] 200 GET /api/imagecode?pcodeid=f0b3edf1-f6e1-47b6-ac94-e2ea009d8798&codeid=c405242b-ebd3-4b72-9d5e-704c54cc3939 (127.0.0.1) 25.00ms
+[I 200412 00:00:34 web:2162] 200 GET /api/imagecode?pcodeid=c405242b-ebd3-4b72-9d5e-704c54cc3939&codeid=05feb6ea-02f8-4723-b248-26c2509f9511 (127.0.0.1) 18.00ms
+[I 200412 00:00:48 web:2162] 200 GET /api/imagecode?pcodeid=05feb6ea-02f8-4723-b248-26c2509f9511&codeid=439f6013-d368-49da-9ea6-c57b201cef1e (127.0.0.1) 18.00ms
+[I 200412 00:00:49 web:2162] 200 GET /api/imagecode?pcodeid=439f6013-d368-49da-9ea6-c57b201cef1e&codeid=0c9f385b-155f-4591-88d9-0a183bdf119f (127.0.0.1) 88.00ms
+[I 200412 00:00:51 web:2162] 200 GET /api/imagecode?pcodeid=0c9f385b-155f-4591-88d9-0a183bdf119f&codeid=4e902a63-8d7d-49ca-873b-baf2a5a2812b (127.0.0.1) 21.00ms
+[I 200412 00:01:30 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 00:01:31 web:2162] 200 GET /api/imagecode?pcodeid=4e902a63-8d7d-49ca-873b-baf2a5a2812b&codeid=ed54b140-3c18-44fa-838d-03557904fafd (127.0.0.1) 26.00ms
+[W 200412 00:01:37 web:1667] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[W 200412 00:01:37 web:2162] 403 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 00:02:48 web:2162] 304 GET /register.html (127.0.0.1) 476.00ms
+[I 200412 00:02:48 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=0a67d778-b2f4-4a5a-aaf3-acb053408e0c (127.0.0.1) 27.00ms
+[I 200412 00:02:48 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[W 200412 00:03:01 web:1667] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[W 200412 00:03:01 web:2162] 403 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 00:03:28 web:2162] 304 GET /register.html (127.0.0.1) 530.00ms
+[I 200412 00:03:28 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=21695d4f-4e68-421b-bba5-93978057c510 (127.0.0.1) 31.00ms
+[I 200412 00:03:28 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[I 200412 00:04:06 web:2162] 304 GET /register.html (127.0.0.1) 605.00ms
+[I 200412 00:04:06 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=9f3f9ec9-51d6-4c7c-892d-d0d165419718 (127.0.0.1) 32.00ms
+[I 200412 00:04:06 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[E 200412 00:04:16 web:1670] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "D:\ihome\handlers\VerifyCode.py", line 43, in post
+        mobile = self.json_args('mobile')
+    TypeError: 'dict' object is not callable
+[E 200412 00:04:16 web:2162] 500 POST /api/smscode (127.0.0.1) 3.00ms
+[I 200412 00:05:05 web:2162] 304 GET /register.html (127.0.0.1) 493.00ms
+[I 200412 00:05:05 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=6674ac66-106e-4393-a21d-9d673b419f7d (127.0.0.1) 23.00ms
+[I 200412 00:05:05 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[E 200412 00:05:16 VerifyCode:50] Invalid input of type: 'NoneType'. Convert to a byte, string or number first.
+[I 200412 00:05:16 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 00:05:58 web:2162] 200 GET /api/imagecode?pcodeid=6674ac66-106e-4393-a21d-9d673b419f7d&codeid=0997b6d8-8ad2-418e-8f35-32478ea5ffbf (127.0.0.1) 21.00ms
+[I 200412 00:06:07 web:2162] 200 GET /api/imagecode?pcodeid=0997b6d8-8ad2-418e-8f35-32478ea5ffbf&codeid=ef74c83e-99ae-4a73-acdf-95ccd6a5d93a (127.0.0.1) 13.00ms
+[I 200412 00:09:09 web:2162] 304 GET /register.html (127.0.0.1) 2.00ms
+[I 200412 00:09:09 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=e623f5d0-3810-467a-b2c2-0b09eb4d2bd0 (127.0.0.1) 12.00ms
+[I 200412 00:09:09 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[E 200412 00:09:23 VerifyCode:50] Invalid input of type: 'NoneType'. Convert to a byte, string or number first.
+[I 200412 00:09:23 web:2162] 200 POST /api/smscode (127.0.0.1) 3.00ms
+[I 200412 00:11:08 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 00:11:40 web:2162] 304 GET /register.html (127.0.0.1) 613.00ms
+[I 200412 00:11:41 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=2edeb399-36fd-4b0c-807a-18021444d8fd (127.0.0.1) 33.00ms
+[I 200412 00:11:41 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[E 200412 00:12:56 VerifyCode:50] Invalid input of type: 'NoneType'. Convert to a byte, string or number first.
+[I 200412 00:12:56 web:2162] 200 POST /api/smscode (127.0.0.1) 3.00ms
+[I 200412 00:13:05 web:2162] 200 GET /api/imagecode?pcodeid=2edeb399-36fd-4b0c-807a-18021444d8fd&codeid=dbe481f6-004d-480b-b57d-9145445860ad (127.0.0.1) 20.00ms
+[E 200412 00:13:13 VerifyCode:50] Invalid input of type: 'NoneType'. Convert to a byte, string or number first.
+[I 200412 00:13:13 web:2162] 200 POST /api/smscode (127.0.0.1) 3.00ms
+[I 200412 00:13:15 web:2162] 200 GET /api/imagecode?pcodeid=dbe481f6-004d-480b-b57d-9145445860ad&codeid=dc0b0100-ddb3-4500-a913-9ab5b99004aa (127.0.0.1) 24.00ms
+[E 200412 00:13:21 VerifyCode:50] Invalid input of type: 'NoneType'. Convert to a byte, string or number first.
+[I 200412 00:13:21 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 10:51:36 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 581.00ms
+[E 200412 10:51:37 VerifyCode:28] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200412 10:51:37 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=40581540-ca08-4e42-a878-fe52b54331c7 (127.0.0.1) 1253.00ms
+[E 200412 10:51:52 VerifyCode:51] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200412 10:51:52 web:2162] 200 POST /api/smscode (127.0.0.1) 999.00ms
+[I 200412 10:52:53 web:2162] 200 GET /api/imagecode?pcodeid=40581540-ca08-4e42-a878-fe52b54331c7&codeid=5e2134f4-4e9f-43e8-b5d7-a65b73321676 (127.0.0.1) 80.00ms
+[I 200412 10:52:54 web:2162] 200 GET /api/imagecode?pcodeid=5e2134f4-4e9f-43e8-b5d7-a65b73321676&codeid=8562e994-b07c-4297-99f7-dd5eaede7d01 (127.0.0.1) 10.00ms
+[I 200412 10:53:00 web:2162] 200 POST /api/smscode (127.0.0.1) 0.00ms
+[I 200412 10:53:46 web:2162] 200 GET /api/imagecode?pcodeid=8562e994-b07c-4297-99f7-dd5eaede7d01&codeid=1b6dbcd6-d449-45b8-8917-9b0dcc3ffdd6 (127.0.0.1) 10.00ms
+[I 200412 10:54:10 web:2162] 200 GET /api/imagecode?pcodeid=1b6dbcd6-d449-45b8-8917-9b0dcc3ffdd6&codeid=7d8c5fed-ae8a-4727-b59a-82a9aabdd9d1 (127.0.0.1) 25.00ms
+[I 200412 10:54:15 web:2162] 200 GET /api/imagecode?pcodeid=7d8c5fed-ae8a-4727-b59a-82a9aabdd9d1&codeid=790650a6-e7c9-40dc-b6e5-2332873380d9 (127.0.0.1) 10.00ms
+[I 200412 10:54:32 web:2162] 200 GET /api/imagecode?pcodeid=790650a6-e7c9-40dc-b6e5-2332873380d9&codeid=78bf33eb-e9e7-4108-8a3d-4b8d97049319 (127.0.0.1) 10.00ms
+[I 200412 10:55:25 web:2162] 304 GET /register.html (127.0.0.1) 6.00ms
+[I 200412 10:55:25 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=7fdebccf-b30a-4bb6-9cf3-c9bc19bccaec (127.0.0.1) 21.00ms
+[I 200412 10:55:26 web:2162] 200 GET /favicon.ico (127.0.0.1) 68.00ms
+[I 200412 10:55:41 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 10:56:41 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 10:57:02 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 10:57:17 web:2162] 304 GET /register.html (127.0.0.1) 486.00ms
+[I 200412 10:57:17 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=0ecf052f-e0e7-4384-a4a7-b3af55a42d29 (127.0.0.1) 31.00ms
+[I 200412 10:57:17 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 10:57:30 web:2162] 200 POST /api/smscode (127.0.0.1) 539.00ms
+[I 200412 10:59:52 autoreload:199] D:\ihome\config.py modified; restarting server
+[I 200412 11:02:55 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 11:03:04 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 11:03:12 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 11:40:46 autoreload:199] D:\ihome\config.py modified; restarting server
+[I 200412 11:41:01 web:2162] 304 GET /register.html (127.0.0.1) 466.00ms
+[I 200412 11:41:02 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=155cca82-66c1-4a4d-bc2b-929d945b7fa4 (127.0.0.1) 90.00ms
+[I 200412 11:41:02 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[E 200412 11:45:35 web:1670] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1569, in _execute
+        result = self.prepare()
+      File "D:\ihome\handlers\BaseHandler.py", line 27, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "C:\Python27\Lib\json\__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "C:\Python27\Lib\json\decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "C:\Python27\Lib\json\decoder.py", line 380, in raw_decode
+        obj, end = self.scan_once(s, idx)
+    ValueError: Expecting property name: line 5 column 1 (char 71)
+[E 200412 11:45:35 web:2162] 500 POST /api/smscode (127.0.0.1) 81.00ms
+[I 200412 11:46:50 web:2162] 200 GET /api/imagecode?pcodeid=155cca82-66c1-4a4d-bc2b-929d945b7fa4&codeid=17344f79-efb6-4a95-8c0c-9777eb96265b (127.0.0.1) 41.00ms
+[E 200412 11:47:25 web:1670] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1569, in _execute
+        result = self.prepare()
+      File "D:\ihome\handlers\BaseHandler.py", line 27, in prepare
+        self.json_args = json.loads(self.request.body)
+      File "C:\Python27\Lib\json\__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "C:\Python27\Lib\json\decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "C:\Python27\Lib\json\decoder.py", line 380, in raw_decode
+        obj, end = self.scan_once(s, idx)
+    ValueError: Expecting property name: line 5 column 1 (char 122)
+[E 200412 11:47:25 web:2162] 500 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 11:47:33 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 11:47:37 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 11:48:15 web:2162] 200 POST /api/smscode (127.0.0.1) 443.00ms
+[I 200412 11:50:07 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 11:50:17 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 11:50:36 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 11:52:54 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 11:57:28 autoreload:199] D:\ihome\handlers\BaseHandler.py modified; restarting server
+[I 200412 12:04:05 autoreload:199] D:\ihome\handlers\BaseHandler.py modified; restarting server
+[I 200412 12:11:11 web:2162] 304 GET /register.html (127.0.0.1) 455.00ms
+[I 200412 12:11:11 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=2d28233d-fbec-4a30-9989-c5037f0ebd53 (127.0.0.1) 100.00ms
+[I 200412 12:11:11 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 12:11:37 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 12:14:39 web:2162] 304 GET /register.html (127.0.0.1) 475.00ms
+[I 200412 12:14:39 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=9b6db9b9-e8f0-428d-9b40-44db7f5b0e00 (127.0.0.1) 42.00ms
+[I 200412 12:14:39 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 12:14:52 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 12:17:27 web:2162] 200 GET /register.html (127.0.0.1) 500.00ms
+[I 200412 12:17:27 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=e2c89d13-2eb4-4872-b109-224f879f9b9c (127.0.0.1) 48.00ms
+[I 200412 12:17:27 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 12:17:40 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 12:38:57 web:2162] 304 GET /register.html (127.0.0.1) 577.00ms
+[I 200412 12:38:57 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=056df349-f3ea-40f7-8ec9-129429d31a9a (127.0.0.1) 36.00ms
+[I 200412 12:39:17 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[W 200412 12:47:44 web:2162] 404 GET /regist.html (127.0.0.1) 3.00ms
+[I 200412 12:48:04 web:2162] 200 GET /register.html (127.0.0.1) 412.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 1.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 3.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/css/ihome/register.css (127.0.0.1) 12.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 8.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 15.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 132.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 51.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.00ms
+[I 200412 12:48:04 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=7eb2acd9-c717-4e43-991d-fff9717b36fe (127.0.0.1) 42.00ms
+[I 200412 12:48:04 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 73.00ms
+[I 200412 12:48:07 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 53.00ms
+[I 200412 12:48:23 web:2162] 200 POST /api/smscode (127.0.0.1) 725.00ms
+[I 200412 12:50:59 web:2162] 304 GET /register.html (127.0.0.1) 2.00ms
+[I 200412 12:51:00 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.00ms
+[I 200412 12:51:00 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=9052221e-e575-4ab3-b038-5b357b59fa12 (127.0.0.1) 13.00ms
+[I 200412 12:51:00 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 12:51:11 web:2162] 200 POST /api/smscode (127.0.0.1) 554.00ms
+[I 200412 12:51:53 web:2162] 200 POST /api/smscode (127.0.0.1) 1044.00ms
+[I 200412 12:52:02 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 12:53:29 web:2162] 200 POST /api/smscode (127.0.0.1) 4.00ms
+[I 200412 12:53:30 web:2162] 200 GET /api/imagecode?pcodeid=9052221e-e575-4ab3-b038-5b357b59fa12&codeid=2614644c-da55-452a-baca-d3d7f13e437c (127.0.0.1) 12.00ms
+[I 200412 12:53:35 web:2162] 200 POST /api/smscode (127.0.0.1) 3.00ms
+[I 200412 12:53:35 web:2162] 200 GET /api/imagecode?pcodeid=2614644c-da55-452a-baca-d3d7f13e437c&codeid=00266a1e-c967-4065-8dbd-b5d3b9f16303 (127.0.0.1) 12.00ms
+[I 200412 13:02:18 web:2162] 304 GET /register.html (127.0.0.1) 484.00ms
+[I 200412 13:02:18 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.00ms
+[I 200412 13:02:18 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=e43cdb0e-6eab-4f07-8e7b-e776785652a4 (127.0.0.1) 39.00ms
+[I 200412 13:02:18 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 13:02:36 web:2162] 200 POST /api/smscode (127.0.0.1) 528.00ms
+[I 200412 13:03:14 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 13:13:00 autoreload:199] D:\ihome\handlers\BaseHandler.py modified; restarting server
+[I 200412 13:22:57 autoreload:199] D:\ihome\handlers\BaseHandler.py modified; restarting server
+[I 200412 13:23:22 web:2162] 304 GET /register.html (127.0.0.1) 617.00ms
+[I 200412 13:23:22 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 4.00ms
+[I 200412 13:23:22 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=d41d942e-0bc3-4e78-9a29-05cea4fa5342 (127.0.0.1) 36.00ms
+[I 200412 13:23:22 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 13:23:34 web:2162] 200 POST /api/smscode (127.0.0.1) 452.00ms
+[I 200412 13:24:05 web:2162] 200 POST /api/smscode (127.0.0.1) 0.00ms
+[E 200412 13:24:05 web:1670] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "D:\ihome\handlers\VerifyCode.py", line 51, in post
+        self.check_args(mobile, image_code_id, image_code_text)
+      File "D:\ihome\handlers\BaseHandler.py", line 23, in check_args
+        raise self.finish()
+    TypeError: exceptions must be old-style classes or derived from BaseException, not Future
+[I 200412 13:30:20 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 13:30:37 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 13:30:42 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 14:29:44 web:2162] 304 GET /register.html (127.0.0.1) 499.00ms
+[I 200412 14:29:44 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.00ms
+[I 200412 14:29:44 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=be295bc4-3ebd-46c4-8134-ad3e6c69b1b7 (127.0.0.1) 38.00ms
+[I 200412 14:29:44 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[E 200412 14:29:58 web:1670] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "D:\ihome\handlers\VerifyCode.py", line 87, in post
+        if result.get('statusCode') != '000000':
+    AttributeError: 'NoneType' object has no attribute 'get'
+[E 200412 14:29:58 web:2162] 500 POST /api/smscode (127.0.0.1) 479.00ms
+[I 200412 14:30:47 web:2162] 200 POST /api/smscode (127.0.0.1) 435.00ms
+[I 200412 14:31:12 web:2162] 200 POST /api/smscode (127.0.0.1) 452.00ms
+[I 200412 14:32:16 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 14:33:40 web:2162] 304 GET /register.html (127.0.0.1) 495.00ms
+[I 200412 14:33:40 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=b14854bc-4320-40cd-b9d6-90b81ee3ff1e (127.0.0.1) 109.00ms
+[I 200412 14:33:40 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 14:33:49 web:2162] 200 GET /api/imagecode?pcodeid=b14854bc-4320-40cd-b9d6-90b81ee3ff1e&codeid=a3ebf0ea-9237-4962-8509-36a4beef9f34 (127.0.0.1) 20.00ms
+[I 200412 14:33:55 web:2162] 200 POST /api/smscode (127.0.0.1) 483.00ms
+[I 200412 14:34:50 web:2162] 200 POST /api/smscode (127.0.0.1) 493.00ms
+[I 200412 14:35:45 web:2162] 200 POST /api/smscode (127.0.0.1) 421.00ms
+[I 200412 14:37:30 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 14:37:34 web:2162] 200 GET /api/imagecode?pcodeid=a3ebf0ea-9237-4962-8509-36a4beef9f34&codeid=79ff9580-8937-4dfd-a2cd-d3289306aba8 (127.0.0.1) 25.00ms
+[I 200412 14:37:40 web:2162] 200 GET /api/imagecode?pcodeid=79ff9580-8937-4dfd-a2cd-d3289306aba8&codeid=fe53757b-2be1-4e3d-993a-dca257dca4f7 (127.0.0.1) 20.00ms
+[I 200412 14:37:48 web:2162] 200 POST /api/smscode (127.0.0.1) 658.00ms
+[I 200412 14:38:38 web:2162] 200 POST /api/smscode (127.0.0.1) 624.00ms
+[I 200412 14:39:13 autoreload:199] D:\ihome\handlers\VerifyCode.py modified; restarting server
+[I 200412 14:59:24 web:2162] 200 GET /api/imagecode?pcodeid=fe53757b-2be1-4e3d-993a-dca257dca4f7&codeid=79517b16-7c7a-4e13-87f5-0dd10ad0ff22 (127.0.0.1) 37.00ms
+[I 200412 14:59:34 web:2162] 200 GET /api/imagecode?pcodeid=79517b16-7c7a-4e13-87f5-0dd10ad0ff22&codeid=3684fd73-1c4b-415a-9230-0af26b8c913c (127.0.0.1) 14.00ms
+[I 200412 14:59:45 web:2162] 200 POST /api/smscode (127.0.0.1) 574.00ms
+[W 200412 15:00:05 web:2162] 405 POST /api/register (127.0.0.1) 0.00ms
+[I 200412 15:01:38 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 15:02:21 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 15:40:15 web:2162] 304 GET /register.html (127.0.0.1) 468.00ms
+[I 200412 15:40:15 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.00ms
+[I 200412 15:40:15 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=4a5f83d2-3068-4cb5-bfde-ff2591ef501c (127.0.0.1) 36.00ms
+[I 200412 15:40:15 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 15:40:31 web:2162] 200 POST /api/smscode (127.0.0.1) 484.00ms
+[I 200412 15:40:49 web:2162] 200 POST /api/register (127.0.0.1) 3.00ms
+[I 200412 15:41:12 web:2162] 200 POST /api/register (127.0.0.1) 1.00ms
+[I 200412 16:33:02 autoreload:199] D:\ihome\constants.py modified; restarting server
+[I 200412 16:33:26 autoreload:199] D:\ihome\constants.py modified; restarting server
+[I 200412 17:14:54 web:2162] 304 GET /register.html (127.0.0.1) 494.00ms
+[I 200412 17:14:54 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.00ms
+[I 200412 17:14:54 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=464f661c-65dd-420d-b8e7-0b93ea4a2480 (127.0.0.1) 36.00ms
+[I 200412 17:14:55 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 17:15:03 web:2162] 200 GET /api/imagecode?pcodeid=464f661c-65dd-420d-b8e7-0b93ea4a2480&codeid=acebc5e1-abb1-4c12-9c19-bf00422f8bde (127.0.0.1) 14.00ms
+[I 200412 17:15:19 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 17:15:19 web:2162] 200 GET /api/imagecode?pcodeid=acebc5e1-abb1-4c12-9c19-bf00422f8bde&codeid=0d19a1a9-27c2-4327-ad65-d000df3a0a2c (127.0.0.1) 10.00ms
+[I 200412 17:15:21 web:2162] 200 GET /api/imagecode?pcodeid=0d19a1a9-27c2-4327-ad65-d000df3a0a2c&codeid=ff5af888-7fa1-4b9e-9b3b-3bca3e5750c5 (127.0.0.1) 9.00ms
+[I 200412 17:15:29 web:2162] 200 POST /api/smscode (127.0.0.1) 632.00ms
+[I 200412 17:15:52 web:2162] 200 POST /api/register (127.0.0.1) 1.00ms
+[I 200412 17:16:04 web:2162] 200 POST /api/register (127.0.0.1) 1.00ms
+[I 200412 17:16:16 web:2162] 200 POST /api/register (127.0.0.1) 4.00ms
+[I 200412 17:16:43 web:2162] 304 GET /register.html (127.0.0.1) 494.00ms
+[I 200412 17:16:43 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=f1e60942-c7d5-4936-911e-266bcf79b8c4 (127.0.0.1) 36.00ms
+[I 200412 17:16:43 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 17:17:02 web:2162] 200 GET /api/imagecode?pcodeid=f1e60942-c7d5-4936-911e-266bcf79b8c4&codeid=7bcb7e96-c5ec-4012-9e1b-22275f35824d (127.0.0.1) 9.00ms
+[I 200412 17:17:02 web:2162] 200 GET /api/imagecode?pcodeid=7bcb7e96-c5ec-4012-9e1b-22275f35824d&codeid=f548d00d-9f9e-4c53-9277-1279d5cc6beb (127.0.0.1) 10.00ms
+[I 200412 17:17:03 web:2162] 200 GET /api/imagecode?pcodeid=f548d00d-9f9e-4c53-9277-1279d5cc6beb&codeid=51a418a3-f096-4784-8d0e-b660fe52ab90 (127.0.0.1) 10.00ms
+[I 200412 17:17:08 web:2162] 200 GET /api/imagecode?pcodeid=51a418a3-f096-4784-8d0e-b660fe52ab90&codeid=39bde8ca-1771-477f-8760-56246726ffab (127.0.0.1) 18.00ms
+[I 200412 17:17:09 web:2162] 200 GET /api/imagecode?pcodeid=39bde8ca-1771-477f-8760-56246726ffab&codeid=4be91f9b-a2ca-4c43-8882-acc1757a2e39 (127.0.0.1) 15.00ms
+[I 200412 17:17:09 web:2162] 200 GET /api/imagecode?pcodeid=4be91f9b-a2ca-4c43-8882-acc1757a2e39&codeid=a641ccc3-9393-4fe1-8942-ea08e5aec3e4 (127.0.0.1) 22.00ms
+[I 200412 17:17:09 web:2162] 200 GET /api/imagecode?pcodeid=a641ccc3-9393-4fe1-8942-ea08e5aec3e4&codeid=4873a3ad-5750-4cce-b01a-3ed0e1c24bf2 (127.0.0.1) 14.00ms
+[I 200412 17:18:22 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 18:45:31 web:2162] 304 GET /register.html (127.0.0.1) 445.00ms
+[I 200412 18:45:31 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.00ms
+[I 200412 18:45:31 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=e4d68cb5-f3ad-40bb-be4a-c20db6b8e511 (127.0.0.1) 44.00ms
+[I 200412 18:45:55 web:2162] 200 POST /api/smscode (127.0.0.1) 1.00ms
+[I 200412 18:45:55 web:2162] 200 GET /api/imagecode?pcodeid=e4d68cb5-f3ad-40bb-be4a-c20db6b8e511&codeid=2ddaec80-dd1f-44b2-a387-7c7e5b1e9dc0 (127.0.0.1) 12.00ms
+[I 200412 18:46:05 web:2162] 200 POST /api/smscode (127.0.0.1) 556.00ms
+[I 200412 18:46:22 web:2162] 200 GET /api/imagecode?pcodeid=2ddaec80-dd1f-44b2-a387-7c7e5b1e9dc0&codeid=f1700130-00c0-4f40-978f-05bba9a8525e (127.0.0.1) 20.00ms
+[I 200412 18:46:29 web:2162] 200 GET /api/imagecode?pcodeid=f1700130-00c0-4f40-978f-05bba9a8525e&codeid=9d8895c6-cc2e-4144-935d-a7f79f3fc2a8 (127.0.0.1) 7.00ms
+[I 200412 18:46:37 web:2162] 200 GET /api/imagecode?pcodeid=9d8895c6-cc2e-4144-935d-a7f79f3fc2a8&codeid=f3f796ac-3a39-403a-a390-6773693659d4 (127.0.0.1) 15.00ms
+[I 200412 18:46:38 web:2162] 200 GET /api/imagecode?pcodeid=f3f796ac-3a39-403a-a390-6773693659d4&codeid=daca4607-3ecc-468b-907d-f8a196b686ec (127.0.0.1) 16.00ms
+[I 200412 18:46:39 web:2162] 200 GET /api/imagecode?pcodeid=daca4607-3ecc-468b-907d-f8a196b686ec&codeid=01ce2418-39b2-430b-9528-cc14e7ee48e6 (127.0.0.1) 16.00ms
+[I 200412 18:46:48 web:2162] 200 POST /api/smscode (127.0.0.1) 651.00ms
+[I 200412 18:46:58 web:2162] 200 GET /api/imagecode?pcodeid=01ce2418-39b2-430b-9528-cc14e7ee48e6&codeid=ff3f3e9f-fa16-46fd-8ff0-0df49e7109aa (127.0.0.1) 23.00ms
+[I 200412 18:47:05 web:2162] 200 POST /api/smscode (127.0.0.1) 2.00ms
+[I 200412 18:47:05 web:2162] 200 GET /api/imagecode?pcodeid=ff3f3e9f-fa16-46fd-8ff0-0df49e7109aa&codeid=59fa668b-9232-41a6-8043-a7afcb32ae81 (127.0.0.1) 13.00ms
+[I 200412 18:47:14 web:2162] 200 POST /api/smscode (127.0.0.1) 455.00ms
+[I 200412 18:47:46 web:2162] 200 POST /api/register (127.0.0.1) 519.00ms
+[I 200412 18:55:54 autoreload:199] D:\ihome\sqlalchemy_engine.py modified; restarting server
+[I 200412 18:59:39 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:18:13 web:2162] 200 GET /login.html (127.0.0.1) 651.00ms
+[I 200412 19:18:14 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 73.00ms
+[I 200412 19:18:14 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 7.00ms
+[I 200412 19:18:14 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 19:20:15 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:20:38 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:21:19 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[W 200412 19:21:31 web:2162] 405 POST /api/login (127.0.0.1) 2.00ms
+[I 200412 19:22:30 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:23:35 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:24:26 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:24:47 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:35:22 web:2162] 304 GET /register.html (127.0.0.1) 525.00ms
+[I 200412 19:35:22 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.00ms
+[I 200412 19:35:22 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=f530f6a3-6e0b-4afb-9554-a6b49b762f8d (127.0.0.1) 46.00ms
+[I 200412 19:35:40 web:2162] 200 POST /api/smscode (127.0.0.1) 32.00ms
+[I 200412 19:35:55 web:2162] 200 GET /api/imagecode?pcodeid=f530f6a3-6e0b-4afb-9554-a6b49b762f8d&codeid=ebfe7fa0-10fc-4d8f-af14-58d372fd3190 (127.0.0.1) 11.00ms
+[I 200412 19:36:01 web:2162] 200 GET /api/imagecode?pcodeid=ebfe7fa0-10fc-4d8f-af14-58d372fd3190&codeid=30acd95b-2170-4113-b9fa-e755854de077 (127.0.0.1) 12.00ms
+[I 200412 19:36:02 web:2162] 200 GET /api/imagecode?pcodeid=30acd95b-2170-4113-b9fa-e755854de077&codeid=bd298495-f18d-4918-8d00-5179e0d3f3ae (127.0.0.1) 8.00ms
+[I 200412 19:36:10 web:2162] 200 POST /api/smscode (127.0.0.1) 39.00ms
+[I 200412 19:37:26 web:2162] 200 GET /api/imagecode?pcodeid=bd298495-f18d-4918-8d00-5179e0d3f3ae&codeid=0f4eb46e-043b-4e36-9b2b-d94aef9a2436 (127.0.0.1) 14.00ms
+[I 200412 19:37:27 web:2162] 200 GET /api/imagecode?pcodeid=0f4eb46e-043b-4e36-9b2b-d94aef9a2436&codeid=eade8721-e348-4391-8fcd-3a5e74bafe22 (127.0.0.1) 10.00ms
+[I 200412 19:37:36 web:2162] 200 POST /api/smscode (127.0.0.1) 38.00ms
+[I 200412 19:43:55 web:2162] 200 GET /api/imagecode?pcodeid=eade8721-e348-4391-8fcd-3a5e74bafe22&codeid=d886fb15-fbc2-4b52-98e1-326b12382a81 (127.0.0.1) 14.00ms
+[I 200412 19:44:03 web:2162] 200 POST /api/smscode (127.0.0.1) 446.00ms
+[E 200412 19:44:27 PassPort:59] (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '18038009493' for key 'up_name'
+    [SQL: INSERT INTO ih_user_profile (up_name, up_mobile, up_passwd) VALUES (%(up_name)s, %(up_mobile)s, %(up_passwd)s)]
+    [parameters: {'up_name': u'18038009493', 'up_mobile': u'18038009493', 'up_passwd': '6430fe5e671a2858c7f028ac1d5dad3c3e79afde13b5ad2fb511d126a12cda2b'}]
+    (Background on this error at: http://sqlalche.me/e/gkpj)
+[I 200412 19:44:27 web:2162] 200 POST /api/register (127.0.0.1) 132.00ms
+[I 200412 19:46:40 web:2162] 304 GET /register.html (127.0.0.1) 506.00ms
+[I 200412 19:46:41 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=875bd5bf-bec7-4b8f-a30c-e6de122978fd (127.0.0.1) 42.00ms
+[I 200412 19:46:41 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[I 200412 19:47:04 web:2162] 200 POST /api/smscode (127.0.0.1) 481.00ms
+[E 200412 19:47:48 PassPort:71] local variable 'data' referenced before assignment
+[I 200412 19:47:48 web:2162] 200 POST /api/register (127.0.0.1) 177.00ms
+[I 200412 19:49:11 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:50:41 autoreload:199] D:\ihome\handlers\PassPort.py modified; restarting server
+[I 200412 19:51:15 web:2162] 304 GET /register.html (127.0.0.1) 526.00ms
+[I 200412 19:51:16 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=d954cef9-7ae7-4fa4-a6b3-57e1848d86eb (127.0.0.1) 43.00ms
+[I 200412 19:51:16 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200412 19:51:26 web:2162] 200 POST /api/smscode (127.0.0.1) 500.00ms
+[E 200412 19:51:48 PassPort:59] (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '18038009493' for key 'up_name'
+    [SQL: INSERT INTO ih_user_profile (up_name, up_mobile, up_passwd) VALUES (%(up_name)s, %(up_mobile)s, %(up_passwd)s)]
+    [parameters: {'up_name': u'18038009493', 'up_mobile': u'18038009493', 'up_passwd': '6430fe5e671a2858c7f028ac1d5dad3c3e79afde13b5ad2fb511d126a12cda2b'}]
+    (Background on this error at: http://sqlalche.me/e/gkpj)
+[I 200412 19:51:48 web:2162] 200 POST /api/register (127.0.0.1) 76.00ms
+[I 200412 19:52:47 web:2162] 304 GET /register.html (127.0.0.1) 461.00ms
+[I 200412 19:52:47 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=e58b0514-237e-47be-bb7f-019ae7466810 (127.0.0.1) 44.00ms
+[I 200412 19:52:47 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[I 200412 19:53:00 web:2162] 200 POST /api/smscode (127.0.0.1) 461.00ms
+[E 200412 19:53:25 PassPort:71] local variable 'data' referenced before assignment
+[I 200412 19:53:25 web:2162] 200 POST /api/register (127.0.0.1) 180.00ms
+[W 200412 19:56:07 web:2162] 405 POST /api/login (127.0.0.1) 2.00ms
+[E 200412 19:57:19 PassPort:96] 'Query' object has no attribute 'fliter'
+[I 200412 19:57:19 web:2162] 200 POST /api/login (127.0.0.1) 83.00ms
+[E 200412 19:57:53 PassPort:96] 'Query' object has no attribute 'fliter'
+[I 200412 19:57:53 web:2162] 200 POST /api/login (127.0.0.1) 10.00ms
+[I 200412 20:01:52 autoreload:199] D:\ihome\model\ihome.py modified; restarting server
+[I 200412 20:02:50 autoreload:199] D:\ihome\model\ihome.py modified; restarting server
+[I 200412 20:04:22 autoreload:199] D:\ihome\model\ihome.py modified; restarting server
+[I 200412 20:05:26 autoreload:199] D:\ihome\model\ihome.py modified; restarting server
+[E 200412 20:05:31 PassPort:96] SQL expression, column, or mapped entity expected - got '<model.ihome.BaseClass object at 0x00000000047EE3C8>'
+[I 200412 20:05:31 web:2162] 200 POST /api/login (127.0.0.1) 56.00ms
+[I 200412 20:06:23 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 564.00ms
+[I 200412 20:06:23 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=c4cfa8a0-da4d-457f-968f-8e6896caccda (127.0.0.1) 36.00ms
+[I 200412 20:06:38 web:2162] 200 POST /api/smscode (127.0.0.1) 519.00ms
+[E 200412 20:07:02 PassPort:71] local variable 'data' referenced before assignment
+[I 200412 20:07:02 web:2162] 200 POST /api/register (127.0.0.1) 185.00ms
+[E 200412 20:07:35 PassPort:96] SQL expression, column, or mapped entity expected - got '<model.ihome.BaseClass object at 0x0000000004733CC0>'
+[I 200412 20:07:35 web:2162] 200 POST /api/login (127.0.0.1) 11.00ms
+[E 200412 20:11:09 PassPort:96] SQL expression, column, or mapped entity expected - got '<model.ihome.BaseClass object at 0x000000000487E3C8>'
+[I 200412 20:11:09 web:2162] 200 POST /api/login (127.0.0.1) 50.00ms
+[E 200412 20:16:08 PassPort:96] SQL expression, column, or mapped entity expected - got '<model.ihome.BaseClass object at 0x000000000468E3C8>'
+[I 200412 20:16:08 web:2162] 200 POST /api/login (127.0.0.1) 53.00ms
+[E 200412 20:17:41 PassPort:97] SQL expression, column, or mapped entity expected - got '<model.ihome.BaseClass object at 0x000000000452AF98>'
+[I 200412 20:17:41 web:2162] 200 POST /api/login (127.0.0.1) 69.00ms
+[I 200412 20:34:55 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200412 20:34:55 log:110] {}
+[I 200412 20:34:55 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200412 20:34:55 log:110] {}
+[I 200412 20:34:55 log:110] SELECT DATABASE()
+[I 200412 20:34:55 log:110] {}
+[I 200412 20:34:55 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200412 20:34:55 log:110] {}
+[I 200412 20:34:55 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200412 20:34:55 log:110] {}
+[I 200412 20:34:55 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200412 20:34:55 log:110] {}
+[I 200412 20:34:55 log:110] BEGIN (implicit)
+[I 200412 20:34:55 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200412 20:34:55 log:110] {u'param_1': 1, u'up_mobile_1': u'18038009493'}
+[E 200412 20:34:55 PassPort:108] local variable 'data' referenced before assignment
+[I 200412 20:34:55 web:2162] 200 POST /api/login (127.0.0.1) 84.00ms
+[I 200412 20:40:10 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200412 20:40:10 log:110] {}
+[I 200412 20:40:10 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200412 20:40:10 log:110] {}
+[I 200412 20:40:10 log:110] SELECT DATABASE()
+[I 200412 20:40:10 log:110] {}
+[I 200412 20:40:10 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200412 20:40:10 log:110] {}
+[I 200412 20:40:10 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200412 20:40:10 log:110] {}
+[I 200412 20:40:10 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200412 20:40:10 log:110] {}
+[I 200412 20:40:10 log:110] BEGIN (implicit)
+[I 200412 20:40:10 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200412 20:40:10 log:110] {u'param_1': 1, u'up_mobile_1': u'18038009493'}
+[E 200412 20:40:10 PassPort:107] local variable 'data' referenced before assignment
+[I 200412 20:40:10 web:2162] 200 POST /api/login (127.0.0.1) 76.00ms
+[E 200412 20:41:00 PassPort:107] local variable 'data' referenced before assignment
+[I 200412 20:41:00 web:2162] 200 POST /api/login (127.0.0.1) 83.00ms
+[E 200412 20:44:27 PassPort:107] <model.ihome.BaseClass object at 0x00000000046F65F8> is not JSON serializable
+[I 200412 20:44:27 web:2162] 200 POST /api/login (127.0.0.1) 71.00ms
+[E 200412 20:45:42 session:38] 'Session' object has no attribute 'redis'
+[E 200412 20:45:42 PassPort:107] save session failed
+[I 200412 20:45:42 web:2162] 200 POST /api/login (127.0.0.1) 68.00ms
+[E 200412 20:46:36 session:38] 'Session' object has no attribute 'redis'
+[E 200412 20:46:36 PassPort:107] save session failed
+[I 200412 20:46:36 web:2162] 200 POST /api/login (127.0.0.1) 66.00ms
+[I 200412 20:48:16 web:2162] 200 POST /api/login (127.0.0.1) 69.00ms
+[I 200413 22:19:06 web:2162] 304 GET /register.html (127.0.0.1) 473.00ms
+[I 200413 22:19:06 web:2162] 304 GET /static/js/ihome/register.js (127.0.0.1) 58.00ms
+[I 200413 22:19:07 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=618c1e0f-137f-4d07-94ae-06632eddd857 (127.0.0.1) 152.00ms
+[I 200413 22:19:13 web:2162] 200 GET / (127.0.0.1) 60.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 8.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 22.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 10.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 6.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 9.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/js/template.js (127.0.0.1) 2.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.00ms
+[I 200413 22:19:13 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 39.00ms
+[W 200413 22:19:13 web:2162] 404 GET /api/check_login (127.0.0.1) 40.00ms
+[W 200413 22:19:13 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200413 22:19:20 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200413 22:19:47 web:2162] 304 GET / (127.0.0.1) 1.00ms
+[W 200413 22:19:47 web:2162] 404 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200413 22:19:47 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200413 22:19:48 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[I 200413 22:19:48 web:2162] 200 GET /favicon.ico (127.0.0.1) 11.00ms
+[I 200413 22:33:39 autoreload:199] D:\ihome\config.py modified; restarting server
+[I 200413 22:33:49 autoreload:199] D:\ihome\config.py modified; restarting server
+[I 200413 22:33:55 autoreload:199] D:\ihome\config.py modified; restarting server
+[I 200413 22:34:00 autoreload:199] D:\ihome\config.py modified; restarting server
+[I 200413 22:58:56 web:2162] 200 GET /profile.html (127.0.0.1) 529.00ms
+[I 200413 22:58:56 web:2162] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.00ms
+[I 200413 22:58:56 web:2162] 200 GET /static/css/ihome/profile.css (127.0.0.1) 76.00ms
+[I 200413 22:58:56 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 7.00ms
+[W 200413 22:58:56 web:2162] 404 GET /api/profile (127.0.0.1) 6.00ms
+[I 200413 22:59:02 web:2162] 200 GET /my.html (127.0.0.1) 66.00ms
+[I 200413 22:59:02 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 11.00ms
+[I 200413 22:59:02 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 2.00ms
+[W 200413 22:59:02 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[W 200413 22:59:04 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[W 200413 22:59:05 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[W 200413 22:59:06 web:2162] 404 GET /api/profile (127.0.0.1) 1.00ms
+[I 200413 23:07:47 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200413 23:09:55 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200413 23:37:32 web:2162] 304 GET / (127.0.0.1) 430.00ms
+[W 200413 23:37:32 web:2162] 404 GET /api/check_login (127.0.0.1) 5.00ms
+[W 200413 23:37:32 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200413 23:37:32 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[I 200413 23:37:32 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200413 23:38:29 web:2162] 304 GET / (127.0.0.1) 516.00ms
+[I 200413 23:38:30 web:2162] 200 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200413 23:38:30 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200413 23:38:30 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200413 23:38:30 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[W 200413 23:38:34 web:2162] 404 GET /html/register.html (127.0.0.1) 1.00ms
+[W 200413 23:39:56 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[W 200413 23:39:57 web:2162] 404 GET /html/register.html (127.0.0.1) 2.00ms
+[W 200413 23:40:00 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 200413 23:40:01 web:2162] 404 GET /html/login.html (127.0.0.1) 2.00ms
+[W 200413 23:40:02 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200413 23:42:44 web:2162] 200 GET / (127.0.0.1) 436.00ms
+[I 200413 23:42:44 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 2.00ms
+[I 200413 23:42:44 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.00ms
+[I 200413 23:42:44 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.00ms
+[I 200413 23:42:44 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 2.00ms
+[I 200413 23:42:44 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 1.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 10.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 9.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 9.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 445.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/js/template.js (127.0.0.1) 2.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 107.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 98.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.00ms
+[I 200413 23:42:45 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 19.00ms
+[I 200413 23:42:45 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200413 23:42:45 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200413 23:42:47 web:2162] 200 GET /register.html (127.0.0.1) 2.00ms
+[I 200413 23:42:47 web:2162] 200 GET /static/css/ihome/register.css (127.0.0.1) 65.00ms
+[I 200413 23:42:47 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.00ms
+[I 200413 23:42:48 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=30c95261-8f8d-4f6b-8287-414c44c01a5c (127.0.0.1) 38.00ms
+[I 200413 23:42:50 web:2162] 200 GET /login.html (127.0.0.1) 5.00ms
+[I 200413 23:42:50 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 61.00ms
+[I 200413 23:42:50 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.00ms
+[I 200413 23:42:52 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=460c5d45-d17a-4e45-ab15-9d8f9b6820cf (127.0.0.1) 9.00ms
+[I 200414 20:43:53 web:2162] 200 GET / (127.0.0.1) 545.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 2.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 27.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 15.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 1.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 14.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/js/template.js (127.0.0.1) 4.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 11.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 14.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 127.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 112.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 48.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 16.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 16.00ms
+[I 200414 20:43:53 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200414 20:43:53 web:2162] 404 GET /api/house/index (127.0.0.1) 45.00ms
+[I 200414 20:43:53 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 119.00ms
+[I 200414 20:43:59 web:2162] 200 GET /login.html (127.0.0.1) 71.00ms
+[I 200414 20:43:59 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 3.00ms
+[I 200414 20:43:59 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 33.00ms
+[I 200414 20:44:02 web:2162] 200 GET /register.html (127.0.0.1) 5.00ms
+[I 200414 20:44:02 web:2162] 200 GET /static/css/ihome/register.css (127.0.0.1) 6.00ms
+[I 200414 20:44:02 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 53.00ms
+[I 200414 20:44:02 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=e4455755-1d71-4477-8faa-eb0ec42c0241 (127.0.0.1) 195.00ms
+[I 200414 20:44:25 web:2162] 200 GET /my.html (127.0.0.1) 70.00ms
+[I 200414 20:44:25 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 10.00ms
+[I 200414 20:44:25 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 2.00ms
+[W 200414 20:44:25 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[I 200414 20:44:28 web:2162] 200 GET /profile.html (127.0.0.1) 56.00ms
+[I 200414 20:44:28 web:2162] 200 GET /static/css/ihome/profile.css (127.0.0.1) 60.00ms
+[I 200414 20:44:28 web:2162] 200 GET /static/js/ihome/profile.js (127.0.0.1) 3.00ms
+[I 200414 20:44:28 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 10.00ms
+[W 200414 20:44:28 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[I 200414 20:44:36 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 98.00ms
+[I 200414 20:44:44 web:2162] 200 POST /api/profile/name (127.0.0.1) 0.00ms
+[D 200414 20:45:02 connectionpool:813] Starting new HTTPS connection (1): uc.qbox.me:443
+[D 200414 20:45:03 connectionpool:393] https://uc.qbox.me:443 "GET /v1/query?ak=73WBXdczhnRIANG4c6fTXt9dhip1bIl0UsiN43rV&bucket=i-home-1 HTTP/1.1" 200 508
+[D 200414 20:45:03 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200414 20:45:03 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200414 20:45:03 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[E 200414 20:45:04 Profile:49] 'scoped_session' object has no attribute 'update'
+[I 200414 20:45:04 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 1548.00ms
+[W 200414 20:45:20 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[W 200414 20:45:29 web:2162] 404 GET /api/profile (127.0.0.1) 1.00ms
+[D 200414 20:45:39 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[E 200414 20:45:39 Profile:49] 'scoped_session' object has no attribute 'update'
+[I 200414 20:45:39 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 125.00ms
+[W 200414 20:46:20 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[W 200414 20:46:22 web:2162] 404 GET /api/profile (127.0.0.1) 1.00ms
+[I 200414 20:48:21 web:2162] 200 GET / (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 4.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 1.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 25.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 8.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 10.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 5.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/js/template.js (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 3.00ms
+[I 200414 20:48:21 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 3.00ms
+[I 200414 20:48:21 web:2162] 200 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200414 20:48:21 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200414 20:48:35 web:2162] 200 GET /profile.html (127.0.0.1) 1.00ms
+[I 200414 20:48:35 web:2162] 200 GET /static/css/ihome/profile.css (127.0.0.1) 3.00ms
+[I 200414 20:48:35 web:2162] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.00ms
+[I 200414 20:48:35 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 1.00ms
+[W 200414 20:48:35 web:2162] 404 GET /api/profile (127.0.0.1) 2.00ms
+[I 200414 20:48:39 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 41.00ms
+[I 200414 20:48:44 web:2162] 304 GET /profile.html (127.0.0.1) 4.00ms
+[W 200414 20:48:44 web:2162] 404 GET /api/profile (127.0.0.1) 6.00ms
+[I 200414 20:48:44 web:2162] 200 GET /favicon.ico (127.0.0.1) 72.00ms
+[D 200414 20:49:30 connectionpool:240] Resetting dropped connection: up-z2.qiniu.com
+[D 200414 20:49:32 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[E 200414 20:49:32 Profile:49] 'scoped_session' object has no attribute 'update'
+[I 200414 20:49:32 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 2446.00ms
+[I 200414 20:56:24 autoreload:199] D:\ihome\utils\commons.py modified; restarting server
+[I 200414 20:56:54 web:2162] 304 GET /profile.html (127.0.0.1) 494.00ms
+[W 200414 20:56:54 web:2162] 404 GET /api/profile (127.0.0.1) 4.00ms
+[I 200414 20:56:54 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200414 20:57:00 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 2.00ms
+[I 200414 20:57:00 web:2162] 200 GET /login.html (127.0.0.1) 1.00ms
+[I 200414 20:57:00 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.00ms
+[I 200414 20:57:00 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.00ms
+[I 200414 20:57:27 web:2162] 200 POST /api/login (127.0.0.1) 73.00ms
+[I 200414 20:57:58 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 4.00ms
+[I 200414 21:05:37 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:06:14 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:06:36 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:12:44 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:12:49 web:2162] 200 GET /my.html (127.0.0.1) 443.00ms
+[I 200414 21:12:49 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 1.00ms
+[I 200414 21:12:49 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 3.00ms
+[I 200414 21:12:49 web:2162] 200 GET /api/profile (127.0.0.1) 1.00ms
+[I 200414 21:13:04 web:2162] 304 GET /api/profile (127.0.0.1) 2.00ms
+[I 200414 21:13:28 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:13:34 web:2162] 304 GET /api/profile (127.0.0.1) 2.00ms
+[I 200414 21:15:41 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:17:58 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:20:00 web:2162] 200 POST /api/login (127.0.0.1) 59.00ms
+[I 200414 21:20:48 web:2162] 200 GET /my.html (127.0.0.1) 482.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 3.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 21.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 10.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /api/profile (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 3.00ms
+[I 200414 21:20:48 web:2162] 200 GET /login.html (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.00ms
+[I 200414 21:20:48 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 2.00ms
+[I 200414 21:20:59 web:2162] 200 POST /api/login (127.0.0.1) 101.00ms
+[I 200414 21:21:00 web:2162] 200 POST /api/login (127.0.0.1) 16.00ms
+[I 200414 21:21:03 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 54.00ms
+[I 200414 21:21:07 web:2162] 200 POST /api/login (127.0.0.1) 14.00ms
+[I 200414 21:21:08 web:2162] 200 GET / (127.0.0.1) 2.00ms
+[I 200414 21:21:08 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.00ms
+[I 200414 21:21:08 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 3.00ms
+[I 200414 21:21:08 web:2162] 200 GET /static/js/template.js (127.0.0.1) 4.00ms
+[I 200414 21:21:08 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 3.00ms
+[I 200414 21:21:08 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 11.00ms
+[I 200414 21:21:08 web:2162] 200 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200414 21:21:09 web:2162] 404 GET /api/house/index (127.0.0.1) 7.00ms
+[W 200414 21:21:09 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200414 21:21:51 web:2162] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200414 21:21:53 web:2162] 200 GET /register.html (127.0.0.1) 2.00ms
+[I 200414 21:21:53 web:2162] 200 GET /static/css/ihome/register.css (127.0.0.1) 3.00ms
+[I 200414 21:21:53 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.00ms
+[I 200414 21:21:53 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=73a9924d-54b6-46d1-a9c4-c390b43f90d7 (127.0.0.1) 39.00ms
+[W 200414 21:21:58 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 200414 21:22:29 web:2162] 404 GET /my (127.0.0.1) 2.00ms
+[I 200414 21:22:40 web:2162] 304 GET /api/profile (127.0.0.1) 0.00ms
+[I 200414 21:22:40 web:2162] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200414 21:28:18 web:2162] 304 GET /login.html (127.0.0.1) 562.00ms
+[I 200414 21:28:18 web:2162] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200414 21:28:18 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200414 21:28:34 web:2162] 200 POST /api/login (127.0.0.1) 68.00ms
+[W 200414 21:28:34 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[I 200414 21:28:34 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200414 21:28:34 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200414 21:30:36 web:2162] 304 GET /login.html (127.0.0.1) 455.00ms
+[I 200414 21:30:36 web:2162] 304 GET /static/js/ihome/login.js (127.0.0.1) 1.00ms
+[I 200414 21:30:36 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[I 200414 21:30:52 web:2162] 200 POST /api/login (127.0.0.1) 67.00ms
+[I 200414 21:30:52 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200414 21:30:52 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200414 21:30:52 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:35:06 web:2162] 200 POST /api/login (127.0.0.1) 83.00ms
+[I 200414 21:35:06 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200414 21:35:06 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
+[W 200414 21:35:06 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:37:08 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:38:23 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 21:38:47 web:2162] 304 GET /login.html (127.0.0.1) 473.00ms
+[I 200414 21:38:47 web:2162] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200414 21:38:48 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[I 200414 21:38:56 web:2162] 200 POST /api/login (127.0.0.1) 65.00ms
+[I 200414 21:38:57 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200414 21:38:57 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200414 21:38:57 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:39:39 web:2162] 200 GET /my.html (127.0.0.1) 1.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 3.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 3.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 5.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 13.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 40.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 9.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 4.00ms
+[I 200414 21:39:40 web:2162] 200 GET /api/profile (127.0.0.1) 1.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 4.00ms
+[I 200414 21:39:40 web:2162] 200 GET /login.html (127.0.0.1) 2.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 2.00ms
+[I 200414 21:39:40 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200414 21:39:50 web:2162] 200 POST /api/login (127.0.0.1) 16.00ms
+[I 200414 21:39:59 web:2162] 200 GET / (127.0.0.1) 3.00ms
+[I 200414 21:39:59 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.00ms
+[I 200414 21:39:59 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 2.00ms
+[I 200414 21:39:59 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 4.00ms
+[I 200414 21:39:59 web:2162] 200 GET /static/js/template.js (127.0.0.1) 6.00ms
+[I 200414 21:39:59 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 23.00ms
+[I 200414 21:39:59 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200414 21:39:59 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[W 200414 21:40:04 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:40:04 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 25.00ms
+[I 200414 21:40:13 web:2162] 304 GET / (127.0.0.1) 2.00ms
+[I 200414 21:40:13 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200414 21:40:13 web:2162] 404 GET /api/house/index (127.0.0.1) 1.00ms
+[I 200414 21:40:13 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[W 200414 21:40:13 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:41:01 web:2162] 200 POST /api/login (127.0.0.1) 54.00ms
+[I 200414 21:41:02 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200414 21:41:02 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200414 21:41:02 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200414 21:42:29 web:2162] 200 POST /api/login (127.0.0.1) 64.00ms
+[I 200414 21:42:30 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200414 21:42:30 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
+[W 200414 21:42:30 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:50:41 web:2162] 200 POST /api/login (127.0.0.1) 67.00ms
+[I 200414 21:50:41 web:2162] 200 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200414 21:50:41 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
+[W 200414 21:50:41 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[E 200414 21:50:43 web:1670] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "D:\ihome\utils\commons.py", line 11, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "D:\ihome\handlers\Profile.py", line 44, in get
+        name = res['up_name'],
+    TypeError: tuple indices must be integers, not str
+[E 200414 21:50:43 web:2162] 500 GET /api/profile (127.0.0.1) 25.00ms
+[I 200414 21:52:45 web:2162] 304 GET /my.html (127.0.0.1) 556.00ms
+[I 200414 21:52:45 web:2162] 200 GET /api/profile (127.0.0.1) 80.00ms
+[I 200414 21:52:45 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200414 21:52:56 web:2162] 200 GET /profile.html (127.0.0.1) 5.00ms
+[I 200414 21:52:56 web:2162] 200 GET /static/css/ihome/profile.css (127.0.0.1) 1.00ms
+[I 200414 21:52:56 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 1.00ms
+[I 200414 21:52:56 web:2162] 200 GET /static/js/ihome/profile.js (127.0.0.1) 2.00ms
+[I 200414 21:52:56 web:2162] 304 GET /api/profile (127.0.0.1) 26.00ms
+[D 200414 21:53:08 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200414 21:53:08 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200414 21:53:09 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[E 200414 21:53:09 Profile:78] 'scoped_session' object has no attribute 'update'
+[I 200414 21:53:09 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 1064.00ms
+[D 200414 21:54:51 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200414 21:54:51 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200414 21:54:51 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 21:54:51 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 329.00ms
+[I 200414 21:55:03 web:2162] 200 POST /api/profile/name (127.0.0.1) 105.00ms
+[I 200414 21:55:07 web:2162] 200 GET /api/profile (127.0.0.1) 16.00ms
+[W 200414 21:55:07 web:2162] 404 GET /FmT-Qpi7yYr_2GHYOnS6n4r5h8jY (127.0.0.1) 5.00ms
+[I 200414 21:55:09 web:2162] 304 GET /my.html (127.0.0.1) 473.00ms
+[I 200414 21:55:09 web:2162] 304 GET /api/profile (127.0.0.1) 22.00ms
+[I 200414 21:55:09 web:2162] 200 GET /favicon.ico (127.0.0.1) 3.00ms
+[W 200414 21:55:09 web:2162] 404 GET /FmT-Qpi7yYr_2GHYOnS6n4r5h8jY (127.0.0.1) 2.00ms
+[I 200414 21:57:29 web:2162] 304 GET /api/check_login (127.0.0.1) 4.00ms
+[W 200414 21:57:29 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
+[W 200414 21:57:29 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 21:57:31 web:2162] 304 GET / (127.0.0.1) 552.00ms
+[I 200414 21:57:31 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[W 200414 21:57:31 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200414 21:57:31 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200414 21:57:31 web:2162] 200 GET /favicon.ico (127.0.0.1) 1.00ms
+[I 200414 21:57:32 web:2162] 200 GET /api/profile (127.0.0.1) 69.00ms
+[I 200414 21:57:35 web:2162] 304 GET /api/profile (127.0.0.1) 40.00ms
+[D 200414 21:57:44 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200414 21:57:44 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200414 21:57:45 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 21:57:45 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 782.00ms
+[I 200414 21:57:47 web:2162] 200 POST /api/profile/name (127.0.0.1) 32.00ms
+[I 200414 21:57:50 web:2162] 200 GET /api/profile (127.0.0.1) 20.00ms
+[I 200414 21:57:57 web:2162] 304 GET /api/profile (127.0.0.1) 11.00ms
+[D 200414 21:58:26 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 21:58:26 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 236.00ms
+[I 200414 21:58:41 web:2162] 200 POST /api/profile/name (127.0.0.1) 13.00ms
+[I 200414 21:58:47 web:2162] 200 GET /api/profile (127.0.0.1) 17.00ms
+[I 200414 21:58:52 web:2162] 200 GET /orders.html (127.0.0.1) 61.00ms
+[I 200414 21:58:52 web:2162] 200 GET /static/css/ihome/orders.css (127.0.0.1) 8.00ms
+[I 200414 21:58:52 web:2162] 200 GET /static/js/ihome/orders.js (127.0.0.1) 16.00ms
+[W 200414 21:58:52 web:2162] 404 GET /api/order/my?role=custom (127.0.0.1) 2.00ms
+[I 200414 21:58:55 web:2162] 304 GET /api/profile (127.0.0.1) 20.00ms
+[I 200414 21:58:56 web:2162] 200 GET /myhouse.html (127.0.0.1) 65.00ms
+[I 200414 21:58:56 web:2162] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 2.00ms
+[I 200414 21:58:56 web:2162] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 3.00ms
+[W 200414 21:58:56 web:2162] 404 GET /api/profile/auth (127.0.0.1) 2.00ms
+[I 200414 21:58:57 web:2162] 304 GET /api/profile (127.0.0.1) 12.00ms
+[I 200414 21:58:58 web:2162] 200 GET /lorders.html (127.0.0.1) 69.00ms
+[I 200414 21:58:58 web:2162] 200 GET /static/js/ihome/lorders.js (127.0.0.1) 2.00ms
+[W 200414 21:58:58 web:2162] 404 GET /api/order/my?role=landlord (127.0.0.1) 2.00ms
+[I 200414 21:58:59 web:2162] 304 GET /api/profile (127.0.0.1) 19.00ms
+[W 200414 21:59:02 web:2162] 404 GET /api/logout (127.0.0.1) 2.00ms
+[I 200414 22:03:55 autoreload:199] D:\ihome\url.py modified; restarting server
+[I 200414 22:16:20 web:2162] 304 GET /api/profile (127.0.0.1) 69.00ms
+[D 200414 22:16:26 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200414 22:16:26 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200414 22:16:26 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 22:16:26 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 745.00ms
+[D 200414 22:16:33 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 22:16:33 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 253.00ms
+[I 200414 22:16:54 web:2162] 200 GET / (127.0.0.1) 424.00ms
+[I 200414 22:16:54 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.00ms
+[I 200414 22:16:54 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 8.00ms
+[I 200414 22:16:54 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 1.00ms
+[I 200414 22:16:54 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 2.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 1.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 3.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 3.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 5.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/js/template.js (127.0.0.1) 2.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 3.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 2.00ms
+[W 200414 22:16:55 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[I 200414 22:16:55 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200414 22:16:55 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 12.00ms
+[I 200414 22:16:56 web:2162] 200 GET /login.html (127.0.0.1) 2.00ms
+[I 200414 22:16:56 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.00ms
+[I 200414 22:16:56 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200414 22:17:07 web:2162] 200 POST /api/login (127.0.0.1) 12.00ms
+[I 200414 22:17:12 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 32.00ms
+[I 200414 22:17:15 web:2162] 200 POST /api/login (127.0.0.1) 13.00ms
+[W 200414 22:17:16 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 22:17:16 web:2162] 200 GET /api/check_login (127.0.0.1) 1.00ms
+[W 200414 22:17:16 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200414 22:17:19 web:2162] 200 GET /my.html (127.0.0.1) 3.00ms
+[I 200414 22:17:19 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 2.00ms
+[I 200414 22:17:19 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 2.00ms
+[I 200414 22:17:19 web:2162] 200 GET /api/profile (127.0.0.1) 14.00ms
+[I 200414 22:17:28 web:2162] 200 GET /profile.html (127.0.0.1) 2.00ms
+[I 200414 22:17:28 web:2162] 200 GET /static/css/ihome/profile.css (127.0.0.1) 2.00ms
+[I 200414 22:17:28 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 2.00ms
+[I 200414 22:17:28 web:2162] 200 GET /static/js/ihome/profile.js (127.0.0.1) 2.00ms
+[I 200414 22:17:28 web:2162] 304 GET /api/profile (127.0.0.1) 26.00ms
+[D 200414 22:17:34 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 22:17:34 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 201.00ms
+[D 200414 22:17:40 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 22:17:40 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 187.00ms
+[I 200414 22:17:43 web:2162] 200 POST /api/profile/name (127.0.0.1) 14.00ms
+[I 200414 22:17:51 web:2162] 200 POST /api/profile/name (127.0.0.1) 24.00ms
+[I 200414 22:18:27 web:2162] 304 GET /api/profile (127.0.0.1) 74.00ms
+[I 200414 22:18:27 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200414 22:18:27 web:2162] 404 GET /api/house/index (127.0.0.1) 4.00ms
+[W 200414 22:18:27 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200414 22:23:04 web:2162] 304 GET / (127.0.0.1) 462.00ms
+[I 200414 22:23:04 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[W 200414 22:23:04 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
+[W 200414 22:23:05 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200414 22:23:05 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[I 200414 22:23:06 web:2162] 304 GET /api/profile (127.0.0.1) 66.00ms
+[I 200414 22:23:07 web:2162] 200 GET /profile.html (127.0.0.1) 3.00ms
+[I 200414 22:23:07 web:2162] 304 GET /api/profile (127.0.0.1) 20.00ms
+[E 200414 22:23:11 Profile:56] 'avatar'
+[I 200414 22:23:11 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 2.00ms
+[D 200414 22:23:20 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200414 22:23:20 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200414 22:23:20 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200414 22:23:20 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 627.00ms
+[I 200414 22:23:22 web:2162] 200 POST /api/profile/name (127.0.0.1) 16.00ms
+[I 200414 22:23:25 web:2162] 304 GET /api/profile (127.0.0.1) 15.00ms
+[I 200414 22:23:28 web:2162] 200 GET /api/check_login (127.0.0.1) 5.00ms
+[W 200414 22:23:28 web:2162] 404 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200414 22:23:28 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[I 200414 22:23:56 autoreload:199] D:\ihome\handlers\Profile.py modified; restarting server
+[I 200414 22:27:58 web:2162] 304 GET / (127.0.0.1) 502.00ms
+[I 200414 22:27:59 web:2162] 304 GET /api/check_login (127.0.0.1) 4.00ms
+[W 200414 22:27:59 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
+[W 200414 22:27:59 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200414 22:27:59 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
