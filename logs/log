@@ -1153,3 +1153,22 @@
 [W 200414 22:27:59 web:2162] 404 GET /api/house/index (127.0.0.1) 5.00ms
 [W 200414 22:27:59 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
 [I 200414 22:27:59 web:2162] 200 GET /favicon.ico (127.0.0.1) 2.00ms
+[E 200415 23:52:40 House:18] Error 10061 connecting to 127.0.0.1:6379. .
+[E 200415 23:52:40 web:1670] Uncaught exception GET /api/house/area (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/house/area', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "E:\github\ihome\ihome_tornado\handlers\House.py", line 20, in get
+        if ret:
+    UnboundLocalError: local variable 'ret' referenced before assignment
+[E 200415 23:52:41 web:2162] 500 GET /api/house/area (127.0.0.1) 1348.00ms
+[E 200415 23:54:02 House:19] Error 10061 connecting to 127.0.0.1:6379. .
+[D 200415 23:54:02 House:32] [(1, u'\u5357\u5c71\u533a'), (2, u'\u76d0\u7530\u533a'), (3, u'\u798f\u7530\u533a'), (4, u'\u7f57\u6e56\u533a'), (5, u'\u9f99\u5c97\u533a'), (6, u'\u576a\u5c71\u533a'), (7, u'\u5149\u660e\u533a'), (8, u'\u9f99\u534e\u533a'), (9, u'\u5b9d\u5b89\u533a'), (10, u'\u5927\u9e4f\u65b0\u533a'), (11, u'\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a')]
+[E 200415 23:54:03 House:48] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200415 23:54:03 web:2162] 200 GET /api/house/area (127.0.0.1) 2054.00ms
+[D 200415 23:55:58 House:32] [(1, u'\u5357\u5c71\u533a'), (2, u'\u76d0\u7530\u533a'), (3, u'\u798f\u7530\u533a'), (4, u'\u7f57\u6e56\u533a'), (5, u'\u9f99\u5c97\u533a'), (6, u'\u576a\u5c71\u533a'), (7, u'\u5149\u660e\u533a'), (8, u'\u9f99\u534e\u533a'), (9, u'\u5b9d\u5b89\u533a'), (10, u'\u5927\u9e4f\u65b0\u533a'), (11, u'\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a')]
+[I 200415 23:55:58 web:2162] 200 GET /api/house/area (127.0.0.1) 42.00ms
+[I 200415 23:56:31 web:2162] 200 GET /api/house/area (127.0.0.1) 1.00ms
+[I 200415 23:58:31 autoreload:199] E:\github\ihome\ihome_tornado\handlers\House.py modified; restarting server
+[I 200415 23:59:19 autoreload:199] E:\github\ihome\ihome_tornado\handlers\House.py modified; restarting server
