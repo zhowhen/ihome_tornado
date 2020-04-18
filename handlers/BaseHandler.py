@@ -40,7 +40,7 @@ class BaseHandler(RequestHandler):
         pass
 
     def on_finish(self):
-        pass
+        self.db.close()
 
     def get_current_user(self):
         self.session = Session(self)

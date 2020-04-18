@@ -7,6 +7,7 @@ from BaseHandler import BaseHandler
 from utils.response_code import RET
 from model.ihome import ihome_model
 from utils.session import Session
+from utils.commons import require_login
 
 
 class RegisterHandler(BaseHandler):
@@ -100,7 +101,7 @@ class LoginHandler(BaseHandler):
             try:
                 self.session = Session(self)
                 self.session.data['user_id'] = res.up_user_id
-                self.session.data['name'] = mobile
+                self.session.data['name'] = res.up_name if res.up_name else mobile
                 self.session.data['mobile'] = mobile
                 self.session.save()
             except Exception as e:
@@ -112,6 +113,18 @@ class LoginHandler(BaseHandler):
 
 class LogoutHandler(BaseHandler):
     """"""
+    @require_login
     def get(self, *args, **kwargs):
         self.session.clear()
         self.write(dict(errcode=RET.OK, errmsg="退出成功"))
+
+
+class CheckLoginHandler(BaseHandler):
+    """"""
+    def get(self, *args, **kwargs):
+        # get_current_user方法在基类中已实现，它的返回值是session.data（用户保存在redis中
+        # 的session数据），如果为{} ，意味着用户未登录;否则，代表用户已登录
+        if self.get_current_user():
+            return self.write(dict(errno=RET.OK, errmsg='OK', data=dict(name=self.session.data.get('name'))))
+        else:
+            return self.write(dict(errno=RET.SESSIONERR, errmsg='用户未登录'))
