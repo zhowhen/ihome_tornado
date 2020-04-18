@@ -5,7 +5,7 @@ function getCookie(name) {
 
 $(document).ready(function(){
     $.get("/api/house/area", function (data) {
-        if ("0" == data.errcode) {
+        if ("0" == data.errno) {
             // html = template("area-tmpl", {areas: data.data});
             // $("#area-id").html(html);
             // console.log(html);
@@ -13,7 +13,7 @@ $(document).ready(function(){
                 $("#area-id").append('<option value="'+data.data[i].area_id+'">'+data.data[i].name+'</option>');
             }
         }
-    }, "json")
+    }, "json");
 
     $("#form-house-info").submit(function(e){
         e.preventDefault();
@@ -42,9 +42,9 @@ $(document).ready(function(){
                 "X-XSRFTOKEN":getCookie("_xsrf"),
             },
             success: function (data) {
-                if ("4101" == data.errcode) {
+                if ("4101" == data.errno) {
                     location.href = "/login.html";
-                } else if ("0" == data.errcode) {
+                } else if ("0" == data.errno) {
                     $("#house-id").val(data.house_id);
                     $(".error-msg").hide();
                     $("#form-house-info").hide();
@@ -52,7 +52,7 @@ $(document).ready(function(){
                 }
             }
         });
-    })
+    });
     $("#form-house-image").submit(function(e){
         e.preventDefault();
         $('.popup_con').fadeIn('fast');
@@ -60,12 +60,12 @@ $(document).ready(function(){
             url:"/api/house/image",
             type:"POST",
             headers:{
-                "X-XSRFTOKEN":getCookie("_xsrf"),
+                "X-XSRFTOKEN":getCookie("_xsrf")
             },
             success: function(data){
-                if ("4101" == data.errcode) {
+                if ("4101" == data.errno) {
                     location.href = "/login.html";
-                } else if ("0" == data.errcode) {
+                } else if ("0" == data.errno) {
                     $(".house-image-cons").append('<img src="'+ data.url+'">');
                     $('.popup_con').fadeOut('fast');
                 }
@@ -73,4 +73,4 @@ $(document).ready(function(){
         };
         $(this).ajaxSubmit(options);
     });
-})
+});

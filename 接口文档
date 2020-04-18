@@ -10,7 +10,7 @@ pcodeid   int       上一个验证码编号
 返回值：
 图片验证码
 
-发送短信验证码
+短信验证码
 描述：用来发送短信验证码
 URL: /api/phonecode
 method: post
@@ -75,4 +75,19 @@ password          string           是
 {
     "errno":0,
     "errmsg":"",
+}
+{
+    title: "123"
+    price: "123"
+    area_id: "1"
+    address: "123"
+    room_count: "123"
+    acreage: "123"
+    unit: "123"
+    capacity: "123"
+    beds: "123"
+    deposit: "123"
+    min_days: "123"
+    max_days: "13"
+    facility: ["1", "2", "12"]
 }

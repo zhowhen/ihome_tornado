@@ -6,7 +6,7 @@ settings = {
     "static_path": os.path.join(os.path.dirname(__file__), 'static'),
     "template_path": os.path.join(os.path.dirname(__file__), 'template'),
     "cookie_secret": "n1jjld6rQF2r58IhjQRy2FGC2VaU8kFFr4mf7FUcr6w=",
-    "xsrf_cookies": True,
+    # "xsrf_cookies": True,
     "debug": True,
 }
 
@@ -16,7 +16,7 @@ mysql_options = dict(
     database="ihome",
     user="root",
     password="123456",
-    port = 3306,
+    port=3306,
 )
 
 # redis

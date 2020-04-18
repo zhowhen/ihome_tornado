@@ -6,9 +6,9 @@ import config
 ihome_engine = create_engine(
     'mysql+mysqlconnector://{user}:{password}@{host}:{port}/{database}'.format(**config.mysql_options),
     encoding='utf-8',
-    # echo=True,
+    echo=True,
     pool_size=1000,
     pool_recycle=7200,
     # autocommit=True,
-    connect_args={'charset': 'utf8mb4'}
+    connect_args={'charset': 'utf8'}  # 设置数据库字符编码
 )

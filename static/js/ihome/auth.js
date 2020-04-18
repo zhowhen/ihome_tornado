@@ -13,10 +13,10 @@ function getCookie(name) {
 
 $(document).ready(function(){
     $.get("/api/profile/auth", function(data){
-        if ("4101" == data.errcode) {
+        if ("4101" == data.errno) {
             location.href = "/login.html";
         }
-        else if ("0" == data.errcode) {
+        else if ("0" == data.errno) {
             if (data.data.real_name && data.data.id_card) {
                 $("#real-name").val(data.data.real_name);
                 $("#id-card").val(data.data.id_card);
@@ -41,10 +41,10 @@ $(document).ready(function(){
             contentType: "application/json",
             dataType: "json",
             headers:{
-                "X-XSRFTOKEN":getCookie("_xsrf"),
+                "X-XSRFTOKEN":getCookie("_xsrf")
             },
             success: function (data) {
-                if ("0" == data.errcode) {
+                if ("0" == data.errno) {
                     $(".error-msg").hide();
                     showSuccessMsg();
                     $("#real-name").prop("disabled", true);
