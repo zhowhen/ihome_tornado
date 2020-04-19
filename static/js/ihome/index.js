@@ -69,7 +69,7 @@ $(document).ready(function(){
     $.get("/api/house/index", function(data){
         if ("0" == data.errno) {
             $(".swiper-wrapper").html(template("swiper-houses-tmpl", {houses:data.houses}));
-            $(".area-list").html(template("area-list-tmpl", {areas:data.areas}));
+            // $(".area-list").html(template("area-list-tmpl", {areas:data.areas}));
             var mySwiper = new Swiper ('.swiper-container', {
                 loop: true,
                 autoplay: 2000,
@@ -77,6 +77,17 @@ $(document).ready(function(){
                 pagination: '.swiper-pagination',
                 paginationClickable: true
             });
+            // $(".area-list a").click(function(e){
+            //     $("#area-btn").html($(this).html());
+            //     $(".search-btn").attr("area-id", $(this).attr("area-id"));
+            //     $(".search-btn").attr("area-name", $(this).html());
+            //     $("#area-modal").modal("hide");
+            // });
+        }
+    });
+    $.get("/api/house/area", function(data){
+        if ("0" == data.errno) {
+            $(".area-list").html(template("area-list-tmpl", {areas:data.data}));
             $(".area-list a").click(function(e){
                 $("#area-btn").html($(this).html());
                 $(".search-btn").attr("area-id", $(this).attr("area-id"));

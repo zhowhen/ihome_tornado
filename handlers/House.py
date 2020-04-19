@@ -5,10 +5,12 @@ from utils.response_code import RET
 from model.ihome import ihome_model
 from utils.commons import require_login
 from utils.image_storage import storage
+from utils.session import Session
 import constants
 import config
 import logging
 import json
+import math
 
 
 class AreaInfoHandler(BaseHandler):
@@ -171,10 +173,25 @@ class HouseInfoHandler(BaseHandler):
         # 获取参数
         house_id = self.get_argument('house_id')
 
+        # 获取当前登录用户user_id
+        self.session = Session(self)
+        user_id = self.session.data.get('user_id')
+
         # 验证参数
         self.check_args(house_id)
 
-        # 从数据库取出数据
+        # 从redisz中取出数据
+        try:
+            ret = self.redis.get('house_detail_%s' % house_id)
+        except Exception as e:
+            logging.error(e)
+            ret = None
+        if ret:
+            logging.info("hit redis")
+            logging.debug(ret)
+            return self.write('{"errno":%s,"user_id":%s,"errmsg":"OK","data":%s}'
+                              % (RET.OK, user_id, ret))
+
         # 数据库中取数据
         ih_house_info = ihome_model('ih_house_info')
         ih_user_profile = ihome_model('ih_user_profile')
@@ -249,7 +266,7 @@ class HouseInfoHandler(BaseHandler):
         facilities = []
         if ret:
             # 查询结果为[(1,), (2,), (3,), (9,), (13,), (14,), (15,), (21,), (22,), (23,)]
-            # 转化成['1', '2', '3', '9', '13', '14', '15', '21', '22', '23']
+            # 转化成[1, 2, 3, 9, 13, 14, 15, 21, 22, 23]
             facilities = map(lambda x: x.hf_facility_id, ret)
         data['facilities'] = facilities
 
@@ -275,8 +292,15 @@ class HouseInfoHandler(BaseHandler):
                 )
                 comments.append(item)
         data['comments'] = comments
+
+        # 存入redis缓存
+        try:
+            self.redis.setex('house_detail_%s' % house_id, constants.HOUSE_DETAIL_EXPIRES_SECONDS, json.dumps(data))
+        except Exception as e:
+            logging.error(e)
+
         # 返回结果
-        self.write(dict(errno=RET.OK, errmsg='OK', data=data))
+        self.write(dict(errno=RET.OK, errmsg='OK', user_id=user_id, data=data))
 
 
 class HouseImageHandler(BaseHandler):
@@ -322,3 +346,180 @@ class HouseImageHandler(BaseHandler):
         # 返回数据
         img_url = config.image_url_prefix + image_name
         self.write(dict(errno=RET.OK, errmsg='OK', url=img_url))
+
+
+class HouseListHandler(BaseHandler):
+    """"""
+    def get(self, *args, **kwargs):
+        # 获取参数
+        start_date = self.get_argument('sd', '')
+        end_date = self.get_argument('ed', '')
+        area_id = self.get_argument('aid', '')
+        sort_key = self.get_argument('sk', 'new')
+        page = self.get_argument('p', 1)
+
+        # 从redis中去取
+        try:
+            ret = self.redis.hget('hl_%s_%s_%s_%s' % (start_date, end_date, area_id, sort_key), page)
+        except Exception as e:
+            logging.error(e)
+            ret = None
+        if ret:
+            logging.debug('hit redis')
+            return self.write(ret)
+
+        # 校验参数
+        try:
+            page = int(page)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errno=RET.PARAMERR, errmsg='参数错误'))
+        # 查询数据库
+        # 构建查询条件 distinct去从
+        sql = "select distinct hi_title,hi_house_id,hi_price,hi_room_count," \
+              "hi_address,hi_order_count,up_avatar,hi_index_image_url,hi_ctime " \
+              "from ih_house_info inner join ih_user_profile on hi_user_id=up_user_id " \
+              "left join ih_order_info on hi_house_id=oi_house_id "
+        sql_total_count = "select count(distinct hi_house_id) count " \
+                          "from ih_house_info inner join ih_user_profile on hi_user_id=up_user_id " \
+                          "left join ih_order_info on hi_house_id=oi_house_id"
+        sql_where = []
+        sql_params = {}
+        if start_date and end_date:
+            sql_where.append('(not (oi_begin_date<={end_date} and oi_end_date>={start_date}))')
+            sql_params['start_date'] = start_date
+            sql_params['end_date'] = end_date
+        elif start_date:
+            sql_where.append('oi_end_date < {start_date}')
+            sql_params['start_date'] = start_date
+        elif end_date:
+            sql_where.append('oi_begin_date > {end_date}')
+            sql_params['end_date'] = end_date
+
+        if area_id:
+            sql_where.append('hi_area_id={area_id}')
+            sql_params['area_id'] = area_id
+
+        if sql_where:
+            sql += ' where '
+
+        sql += ' and '.join(sql_where)
+        sql = sql.format(**sql_params)
+
+        # 构建排序 order_by
+        if 'new' == sort_key:
+            sql += ' order by hi_ctime desc'
+        elif 'hot' == sort_key:
+            sql += ' order by hi_order_count desc'
+        elif 'pri-inc' == sort_key:
+            sql += ' order by hi_price asc'
+        elif 'pri-des' == sort_key:
+            sql += ' order by hi_price desc'
+
+        # 构建分页(包含redis中要缓存的页数 )
+        if page == 1:
+            sql += ' limit %s' % (constants.HOUSE_LIST_PAGE_CAPACITY * constants.HOUSE_LIST_REDIS_CACHED_PAGE)
+        else:
+            sql += ' limit %s, %s' % ((page-1)*constants.HOUSE_LIST_PAGE_CAPACITY,
+                                      constants.HOUSE_LIST_PAGE_CAPACITY*constants.HOUSE_LIST_REDIS_CACHED_PAGE)
+        logging.debug(sql)
+
+        #  查询数据库
+        try:
+            ret = self.db.execute(sql)
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errno=RET.DBERR, errmsg='get data error'))
+        # 查询总页数
+        try:
+            ret_total = self.db.execute(sql_total_count).scalar()  # 返回统计数量
+        except Exception as e:
+            logging.error(e)
+            total = -1
+        else:
+            total = int(math.ceil(ret_total / float(constants.HOUSE_LIST_PAGE_CAPACITY)))
+        # 构建返回数据
+        houses = []
+        if ret:
+            for i in ret:
+                item = dict(
+                    house_id=i.hi_house_id,
+                    title=i.hi_title,
+                    address=i.hi_address,
+                    room_count=i.hi_room_count,
+                    order_count=i.hi_order_count,
+                    price=i.hi_price,
+                    img_url=config.image_url_prefix + i.hi_index_image_url if i.hi_index_image_url else '',
+                    avatar_url=config.image_url_prefix + i.up_avatar if i.up_avatar else '',
+
+                )
+                houses.append(item)
+        cur_page_data = houses[:constants.HOUSE_LIST_PAGE_CAPACITY]
+        house_data = {}
+        house_data[page] = json.dumps(dict(errno=RET.OK, errmsg='OK', houses=cur_page_data, total=total))
+        i = 1
+        while True:
+            page_data = houses[i*constants.HOUSE_LIST_PAGE_CAPACITY: (i+1)*constants.HOUSE_LIST_PAGE_CAPACITY]
+            if not page_data:
+                break
+            house_data[page+i] = json.dumps(dict(errno=RET.OK, errmsg='OK', houses=page_data, total=total))
+            i +=1
+
+        # 存入redis中
+        try:
+            key = 'hl_%s_%s_%s_%s' % (start_date, end_date, area_id, sort_key)
+            self.redis.hmset(key, house_data)
+            self.redis.expire(key, constants.HOUSE_LIST_REDIS_EXPIRES_SECONDS)  # 设置超时时间
+        except Exception as e:
+            logging.error(e)
+
+        self.write(house_data[page])
+
+
+class HouseIndexHandler(BaseHandler):
+    """"""
+    def get(self, *args, **kwargs):
+        # 没有参数，默认取销量最高的几条HOME_PAGE_MAX_HOUSES
+        # 从redis中取
+        try:
+            ret = self.redis.get('home_page_data')
+        except Exception as e:
+            logging.error(e)
+            ret = None
+        # 如果有就直接返回，都不用loadsl
+        if ret:
+            logging.debug('hit redis')
+            return self.write(ret)
+
+        # 从数据库取数据
+        ih_house_info = ihome_model('ih_house_info')
+        try:
+            ret = self.db.query(ih_house_info.hi_house_id,
+                                ih_house_info.hi_title,
+                                ih_house_info.hi_order_count,
+                                ih_house_info.hi_index_image_url).\
+                filter().order_by(ih_house_info.hi_order_count).\
+                limit(constants.HOME_PAGE_MAX_HOUSES).all()
+        except Exception as e:
+            logging.error(e)
+            return self.write(dict(errno=RET.DBERR, errmsg='get data error'))
+
+        houses = []
+        if ret:
+            for i in ret:
+                item = dict(
+                    house_id=i.hi_house_id,
+                    title=i.hi_title,
+                    img_url=config.image_url_prefix + i.hi_index_image_url if i.hi_index_image_url else '',
+                )
+                houses.append(item)
+
+        # 保存到redis中
+        try:
+            self.redis.setex('home_page_data',
+                             constants.HOME_PAGE_DATA_REDIS_EXPIRE_SECOND,
+                             json.dumps(dict(errno=RET.OK, errmsg='OK', houses=houses)))
+        except Exception as e:
+            logging.error(e)
+
+        self.write(dict(errno=RET.OK, errmsg='OK', houses=houses))

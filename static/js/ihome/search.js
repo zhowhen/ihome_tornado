@@ -39,17 +39,17 @@ function updateHouseData(action="append") {
     };
     $.get("/api/house/list2", params, function(data){
         house_data_querying = false;
-        if ("0" == data.errcode) {
-            if (0 == data.total_page) {
+        if ("0" == data.errno) {
+            if (0 == data.total) {
                 $(".house-list").html("暂时没有符合您查询的房屋信息。");
             } else {
-                total_page = data.total_page;
+                total_page = data.total;
                 if ("append" == action) {
                     cur_page = next_page;
-                    $(".house-list").append(template("house-list-tmpl", {houses:data.data}));
+                    $(".house-list").append(template("house-list-tmpl", {houses:data.houses}));
                 } else if ("renew" == action) {
                     cur_page = 1;
-                    $(".house-list").html(template("house-list-tmpl", {houses:data.data}));
+                    $(".house-list").html(template("house-list-tmpl", {houses:data.houses}));
                 }
             }
         }
@@ -68,7 +68,7 @@ $(document).ready(function(){
     $(".filter-title-bar>.filter-title").eq(1).children("span").eq(0).html(areaName);
 
     $.get("/api/house/area", function(data){
-        if ("0" == data.errcode) {
+        if ("0" == data.errno) {
             var areaId = queryData["aid"];
             if (areaId) {
                 for (var i=0; i<data.data.length; i++) {
