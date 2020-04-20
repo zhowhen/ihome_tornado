@@ -1,0 +1,712 @@
+[I 200420 22:07:00 web:2162] 304 GET / (127.0.0.1) 496.00ms
+[I 200420 22:07:00 web:2162] 304 GET /static/js/ihome/index.js (127.0.0.1) 6.00ms
+[I 200420 22:07:00 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[E 200420 22:07:01 House:492] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:01 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200420 22:07:01 log:110] {}
+[I 200420 22:07:01 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200420 22:07:01 log:110] {}
+[I 200420 22:07:01 log:110] SELECT DATABASE()
+[I 200420 22:07:01 log:110] {}
+[I 200420 22:07:01 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200420 22:07:01 log:110] {}
+[I 200420 22:07:01 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200420 22:07:01 log:110] {}
+[I 200420 22:07:02 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 22:07:02 log:110] {}
+[I 200420 22:07:02 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:07:02 log:110] {}
+[I 200420 22:07:02 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:07:02 log:110] {}
+[I 200420 22:07:02 log:110] BEGIN (implicit)
+[I 200420 22:07:02 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_order_count AS ih_house_info_hi_order_count, ih_house_info.hi_index_image_url AS ih_house_info_hi_index_image_url 
+    FROM ih_house_info ORDER BY ih_house_info.hi_order_count 
+     LIMIT %(param_1)s
+[I 200420 22:07:02 log:110] {u'param_1': 4}
+[E 200420 22:07:03 House:528] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:03 web:2162] 304 GET /api/house/index (127.0.0.1) 2221.00ms
+[I 200420 22:07:03 log:110] ROLLBACK
+[I 200420 22:07:03 web:2162] 200 GET /register.html (127.0.0.1) 3.00ms
+[E 200420 22:07:04 House:23] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:04 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:07:04 log:110] {}
+[I 200420 22:07:04 log:110] BEGIN (implicit)
+[I 200420 22:07:04 log:110] SELECT ih_area_info.ai_area_id AS ih_area_info_ai_area_id, ih_area_info.ai_name AS ih_area_info_ai_name 
+    FROM ih_area_info
+[I 200420 22:07:04 log:110] {}
+[E 200420 22:07:05 House:54] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:05 web:2162] 200 GET /api/house/area (127.0.0.1) 2075.00ms
+[I 200420 22:07:05 log:110] ROLLBACK
+[I 200420 22:07:05 web:2162] 200 GET /static/css/ihome/register.css (127.0.0.1) 24.00ms
+[I 200420 22:07:05 web:2162] 200 GET /static/js/ihome/register.js (127.0.0.1) 15.00ms
+[E 200420 22:07:06 VerifyCode:31] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:06 web:2162] 200 GET /api/imagecode?pcodeid=&codeid=10fdd787-d619-4b41-9154-7ae6b73b3f51 (127.0.0.1) 1212.00ms
+[E 200420 22:07:17 VerifyCode:61] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:17 web:2162] 200 POST /api/smscode (127.0.0.1) 1003.00ms
+[E 200420 22:07:19 VerifyCode:23] Error 10061 connecting to 127.0.0.1:6379. .
+[E 200420 22:07:20 VerifyCode:31] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:20 web:2162] 200 GET /api/imagecode?pcodeid=10fdd787-d619-4b41-9154-7ae6b73b3f51&codeid=077deb92-e67e-4111-9f0d-7ea5fcea5200 (127.0.0.1) 2022.00ms
+[E 200420 22:07:27 VerifyCode:61] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:27 web:2162] 200 POST /api/smscode (127.0.0.1) 1002.00ms
+[E 200420 22:07:28 VerifyCode:23] Error 10061 connecting to 127.0.0.1:6379. .
+[E 200420 22:07:29 VerifyCode:31] Error 10061 connecting to 127.0.0.1:6379. .
+[I 200420 22:07:29 web:2162] 200 GET /api/imagecode?pcodeid=077deb92-e67e-4111-9f0d-7ea5fcea5200&codeid=3158cc0a-7a19-4e1f-abb4-125f17325091 (127.0.0.1) 2015.00ms
+[I 200420 22:08:17 web:2162] 200 GET /api/imagecode?pcodeid=3158cc0a-7a19-4e1f-abb4-125f17325091&codeid=c508c78f-861f-46f7-9f6a-1db9451b3a13 (127.0.0.1) 31.00ms
+[I 200420 22:08:18 web:2162] 200 GET /api/imagecode?pcodeid=c508c78f-861f-46f7-9f6a-1db9451b3a13&codeid=edfa9335-e8aa-4733-8cc7-e85d1a8a24a2 (127.0.0.1) 22.00ms
+[I 200420 22:08:18 web:2162] 200 GET /api/imagecode?pcodeid=edfa9335-e8aa-4733-8cc7-e85d1a8a24a2&codeid=337094f8-6a4c-49ca-a14f-7e06fffd802d (127.0.0.1) 15.00ms
+[I 200420 22:08:25 web:2162] 200 POST /api/smscode (127.0.0.1) 1003.00ms
+[I 200420 22:08:56 web:2162] 200 POST /api/register (127.0.0.1) 2.00ms
+[I 200420 22:09:00 web:2162] 200 POST /api/register (127.0.0.1) 2.00ms
+[I 200420 22:09:08 web:2162] 200 POST /api/register (127.0.0.1) 2.00ms
+[I 200420 22:09:27 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:09:27 log:110] {}
+[I 200420 22:09:27 log:110] BEGIN (implicit)
+[I 200420 22:09:27 log:110] INSERT INTO ih_user_profile (up_name, up_mobile, up_passwd) VALUES (%(up_name)s, %(up_mobile)s, %(up_passwd)s)
+[I 200420 22:09:27 log:110] {'up_name': u'15575958395', 'up_mobile': u'15575958395', 'up_passwd': '6430fe5e671a2858c7f028ac1d5dad3c3e79afde13b5ad2fb511d126a12cda2b'}
+[I 200420 22:09:27 log:110] COMMIT
+[I 200420 22:09:27 web:2162] 200 POST /api/register (127.0.0.1) 115.00ms
+[I 200420 22:09:41 web:2162] 304 GET /static/js/ihome/login.js (127.0.0.1) 70.00ms
+[I 200420 22:09:51 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:09:51 log:110] {}
+[I 200420 22:09:51 log:110] BEGIN (implicit)
+[I 200420 22:09:51 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:09:51 log:110] {u'param_1': 1, u'up_mobile_1': u'15575958395'}
+[I 200420 22:09:51 web:2162] 200 POST /api/login (127.0.0.1) 19.00ms
+[I 200420 22:09:51 log:110] ROLLBACK
+[I 200420 22:09:51 web:2162] 200 GET /api/check_login (127.0.0.1) 1.00ms
+[I 200420 22:09:51 House:27] hit redis
+[D 200420 22:09:51 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:09:51 web:2162] 200 GET /api/house/area (127.0.0.1) 2.00ms
+[W 200420 22:09:51 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 83.00ms
+[I 200420 22:09:51 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 22:09:51 log:110] {}
+[I 200420 22:09:51 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:09:51 log:110] {}
+[I 200420 22:09:51 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:09:51 log:110] {}
+[I 200420 22:09:51 log:110] BEGIN (implicit)
+[I 200420 22:09:51 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_order_count AS ih_house_info_hi_order_count, ih_house_info.hi_index_image_url AS ih_house_info_hi_index_image_url 
+    FROM ih_house_info ORDER BY ih_house_info.hi_order_count 
+     LIMIT %(param_1)s
+[I 200420 22:09:51 log:110] {u'param_1': 4}
+[I 200420 22:09:51 web:2162] 304 GET /api/house/index (127.0.0.1) 26.00ms
+[I 200420 22:09:51 log:110] ROLLBACK
+[I 200420 22:09:56 web:2162] 200 GET /my.html (127.0.0.1) 73.00ms
+[I 200420 22:09:56 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 9.00ms
+[I 200420 22:09:56 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 1.00ms
+[I 200420 22:09:56 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:09:56 log:110] {}
+[I 200420 22:09:56 log:110] BEGIN (implicit)
+[I 200420 22:09:56 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:09:56 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[E 200420 22:09:56 web:1670] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "E:\github\ihome\ihome_tornado\utils\commons.py", line 11, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "E:\github\ihome\ihome_tornado\handlers\Profile.py", line 33, in get
+        avatar=config.image_url_prefix+res.up_avatar
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 200420 22:09:56 web:2162] 500 GET /api/profile (127.0.0.1) 26.00ms
+[I 200420 22:09:56 log:110] ROLLBACK
+[I 200420 22:09:57 web:2162] 200 GET /profile.html (127.0.0.1) 57.00ms
+[I 200420 22:09:57 web:2162] 200 GET /static/css/ihome/profile.css (127.0.0.1) 5.00ms
+[I 200420 22:09:57 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 68.00ms
+[I 200420 22:09:57 web:2162] 200 GET /static/js/ihome/profile.js (127.0.0.1) 20.00ms
+[I 200420 22:09:57 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:09:57 log:110] {}
+[I 200420 22:09:57 log:110] BEGIN (implicit)
+[I 200420 22:09:57 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:09:57 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[E 200420 22:09:57 web:1670] Uncaught exception GET /api/profile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/profile', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "E:\github\ihome\ihome_tornado\utils\commons.py", line 11, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "E:\github\ihome\ihome_tornado\handlers\Profile.py", line 33, in get
+        avatar=config.image_url_prefix+res.up_avatar
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 200420 22:09:57 web:2162] 500 GET /api/profile (127.0.0.1) 19.00ms
+[I 200420 22:09:57 log:110] ROLLBACK
+[D 200420 22:10:42 connectionpool:813] Starting new HTTPS connection (1): uc.qbox.me:443
+[D 200420 22:10:43 connectionpool:393] https://uc.qbox.me:443 "GET /v1/query?ak=73WBXdczhnRIANG4c6fTXt9dhip1bIl0UsiN43rV&bucket=i-home-1 HTTP/1.1" 200 508
+[D 200420 22:10:43 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200420 22:10:43 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200420 22:10:44 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200420 22:10:44 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:10:44 log:110] {}
+[I 200420 22:10:44 log:110] BEGIN (implicit)
+[I 200420 22:10:44 log:110] UPDATE ih_user_profile SET up_avatar=%(up_avatar)s WHERE ih_user_profile.up_user_id = %(up_user_id_1)s
+[I 200420 22:10:44 log:110] {'up_avatar': u'FpkVX7QBQXqjc2x5YzzecqHz5Ym_', u'up_user_id_1': 10006}
+[I 200420 22:10:44 log:110] COMMIT
+[I 200420 22:10:44 web:2162] 200 POST /api/profile/avatar (127.0.0.1) 2019.00ms
+[I 200420 22:10:56 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:10:56 log:110] {}
+[I 200420 22:10:56 log:110] BEGIN (implicit)
+[I 200420 22:10:56 log:110] UPDATE ih_user_profile SET up_name=%(up_name)s WHERE ih_user_profile.up_user_id = %(up_user_id_1)s
+[I 200420 22:10:56 log:110] {'up_name': u'haha', u'up_user_id_1': 10006}
+[I 200420 22:10:56 log:110] COMMIT
+[I 200420 22:10:57 web:2162] 200 POST /api/profile/name (127.0.0.1) 169.00ms
+[I 200420 22:11:00 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:11:00 log:110] {}
+[I 200420 22:11:00 log:110] BEGIN (implicit)
+[I 200420 22:11:00 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:11:00 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[I 200420 22:11:00 web:2162] 200 GET /api/profile (127.0.0.1) 15.00ms
+[I 200420 22:11:00 log:110] ROLLBACK
+[D 200420 22:11:05 House:496] hit redis
+[I 200420 22:11:05 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:11:05 web:2162] 200 GET /api/check_login (127.0.0.1) 4.00ms
+[I 200420 22:11:05 House:27] hit redis
+[D 200420 22:11:05 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:11:05 web:2162] 304 GET /api/house/area (127.0.0.1) 3.00ms
+[W 200420 22:11:05 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200420 22:11:08 web:2162] 200 GET /detail.html?id=12 (127.0.0.1) 63.00ms
+[I 200420 22:11:08 web:2162] 200 GET /static/css/ihome/detail.css (127.0.0.1) 20.00ms
+[I 200420 22:11:08 web:2162] 200 GET /static/js/ihome/detail.js (127.0.0.1) 8.00ms
+[W 200420 22:11:08 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_house_facility`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_house_image`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:11:08 log:110] {}
+[I 200420 22:11:08 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:11:09 log:110] {}
+[I 200420 22:11:09 log:110] SHOW CREATE TABLE `ih_order_info`
+[I 200420 22:11:09 log:110] {}
+[I 200420 22:11:09 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:11:09 log:110] {}
+[I 200420 22:11:09 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 22:11:09 log:110] {}
+[I 200420 22:11:09 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 22:11:09 log:110] {}
+[I 200420 22:11:09 log:110] BEGIN (implicit)
+[I 200420 22:11:09 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_user_id AS ih_house_info_hi_user_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_price AS ih_house_info_hi_price, ih_house_info.hi_ctime AS ih_house_info_hi_ctime, ih_area_info.ai_name AS ih_area_info_ai_name, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_name AS ih_user_profile_up_name, ih_house_info.hi_address AS ih_house_info_hi_address, ih_house_info.hi_room_count AS ih_house_info_hi_room_count, ih_house_info.hi_acreage AS ih_house_info_hi_acreage, ih_house_info.hi_house_unit AS ih_house_info_hi_house_unit, ih_house_info.hi_capacity AS ih_house_info_hi_capacity, ih_house_info.hi_beds AS ih_house_info_hi_beds, ih_house_info.hi_deposit AS ih_house_info_hi_deposit, ih_house_info.hi_min_days AS ih_house_info_hi_min_days, ih_house_info.hi_max_days AS ih_house_info_hi_max_days 
+    FROM ih_house_info, ih_area_info, ih_user_profile 
+    WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s AND ih_house_info.hi_user_id = ih_user_profile.up_user_id AND ih_house_info.hi_area_id = ih_area_info.ai_area_id 
+     LIMIT %(param_1)s
+[I 200420 22:11:09 log:110] {u'hi_house_id_1': u'12', u'param_1': 1}
+[I 200420 22:11:09 log:110] SELECT ih_house_image.hi_url AS ih_house_image_hi_url 
+    FROM ih_house_image 
+    WHERE ih_house_image.hi_house_id = %(hi_house_id_1)s
+[I 200420 22:11:09 log:110] {u'hi_house_id_1': u'12'}
+[I 200420 22:11:09 log:110] SELECT ih_house_facility.hf_facility_id AS ih_house_facility_hf_facility_id 
+    FROM ih_house_facility 
+    WHERE ih_house_facility.hf_house_id = %(hf_house_id_1)s
+[I 200420 22:11:09 log:110] {u'hf_house_id_1': u'12'}
+[I 200420 22:11:09 log:110] SELECT ih_order_info.oi_comment AS ih_order_info_oi_comment, ih_order_info.oi_utime AS ih_order_info_oi_utime, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile 
+    FROM ih_order_info, ih_user_profile 
+    WHERE ih_order_info.oi_house_id = %(oi_house_id_1)s AND ih_order_info.oi_status = %(oi_status_1)s AND ih_order_info.oi_user_id = ih_user_profile.up_user_id
+[I 200420 22:11:09 log:110] {u'oi_house_id_1': u'12', u'oi_status_1': 4}
+[I 200420 22:11:09 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 191.00ms
+[I 200420 22:11:09 log:110] ROLLBACK
+[I 200420 22:11:09 web:2162] 200 GET /static/images/houseicon_sprite.png (127.0.0.1) 40.00ms
+[I 200420 22:11:24 web:2162] 200 GET /booking.html?hid=12 (127.0.0.1) 66.00ms
+[I 200420 22:11:24 web:2162] 200 GET /static/css/ihome/booking.css (127.0.0.1) 12.00ms
+[I 200420 22:11:24 web:2162] 200 GET /static/js/ihome/booking.js (127.0.0.1) 3.00ms
+[I 200420 22:11:24 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200420 22:11:24 House:190] hit redis
+[D 200420 22:11:24 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:11:24 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[W 200420 22:11:41 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200420 22:11:45 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[I 200420 22:11:45 House:190] hit redis
+[D 200420 22:11:45 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:11:45 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[I 200420 22:26:59 House:190] hit redis
+[D 200420 22:26:59 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:26:59 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 7.00ms
+[I 200420 22:27:01 House:190] hit redis
+[D 200420 22:27:01 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:27:01 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 2.00ms
+[W 200420 22:27:01 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[I 200420 22:27:04 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[I 200420 22:27:04 House:190] hit redis
+[D 200420 22:27:04 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:27:04 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 2.00ms
+[W 200420 22:27:18 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:31:34 web:2162] 200 GET /api/check_login (127.0.0.1) 1.00ms
+[D 200420 22:31:34 House:496] hit redis
+[I 200420 22:31:34 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:31:34 House:27] hit redis
+[D 200420 22:31:34 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:31:34 web:2162] 304 GET /api/house/area (127.0.0.1) 2.00ms
+[I 200420 22:31:45 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200420 22:31:45 log:110] {}
+[I 200420 22:31:45 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200420 22:31:45 log:110] {}
+[I 200420 22:31:45 log:110] SELECT DATABASE()
+[I 200420 22:31:45 log:110] {}
+[I 200420 22:31:45 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200420 22:31:45 log:110] {}
+[I 200420 22:31:45 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200420 22:31:45 log:110] {}
+[I 200420 22:31:45 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:31:45 log:110] {}
+[I 200420 22:31:45 log:110] BEGIN (implicit)
+[I 200420 22:31:45 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:31:45 log:110] {u'param_1': 1, u'up_mobile_1': u'15575958395'}
+[I 200420 22:31:45 web:2162] 200 POST /api/login (127.0.0.1) 58.00ms
+[I 200420 22:31:45 log:110] ROLLBACK
+[I 200420 22:31:47 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:31:47 log:110] {}
+[I 200420 22:31:47 log:110] BEGIN (implicit)
+[I 200420 22:31:47 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:31:47 log:110] {u'param_1': 1, u'up_mobile_1': u'15575958395'}
+[I 200420 22:31:47 web:2162] 200 POST /api/login (127.0.0.1) 13.00ms
+[I 200420 22:31:47 log:110] ROLLBACK
+[W 200420 22:31:53 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200420 22:31:54 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[D 200420 22:31:54 House:496] hit redis
+[I 200420 22:31:54 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:31:54 House:27] hit redis
+[D 200420 22:31:54 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:31:54 web:2162] 304 GET /api/house/area (127.0.0.1) 2.00ms
+[I 200420 22:31:57 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:31:57 log:110] {}
+[I 200420 22:31:57 log:110] BEGIN (implicit)
+[I 200420 22:31:57 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:31:57 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[I 200420 22:31:57 web:2162] 304 GET /api/profile (127.0.0.1) 14.00ms
+[I 200420 22:31:57 log:110] ROLLBACK
+[W 200420 22:32:05 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:32:05 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[D 200420 22:32:05 House:496] hit redis
+[I 200420 22:32:05 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:32:05 House:27] hit redis
+[D 200420 22:32:05 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:32:05 web:2162] 304 GET /api/house/area (127.0.0.1) 7.00ms
+[W 200420 22:32:09 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:32:09 House:190] hit redis
+[D 200420 22:32:09 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:32:09 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 2.00ms
+[I 200420 22:32:14 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[I 200420 22:32:14 House:190] hit redis
+[D 200420 22:32:14 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:32:14 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 5.00ms
+[W 200420 22:34:52 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:35:25 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200420 22:35:25 House:190] hit redis
+[D 200420 22:35:25 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:35:25 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[W 200420 22:37:28 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[I 200420 22:37:44 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[I 200420 22:37:44 House:190] hit redis
+[D 200420 22:37:44 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:37:44 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 2.00ms
+[W 200420 22:37:50 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.00ms
+[W 200420 22:37:55 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[W 200420 22:38:10 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:41:00 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[I 200420 22:41:00 House:190] hit redis
+[D 200420 22:41:00 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:41:00 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[I 200420 22:41:18 autoreload:199] E:\github\ihome\ihome_tornado\handlers\PassPort.py modified; restarting server
+[I 200420 22:42:37 web:2162] 200 GET /api/check_login (127.0.0.1) 3.00ms
+[D 200420 22:42:37 House:496] hit redis
+[I 200420 22:42:37 web:2162] 304 GET /api/house/index (127.0.0.1) 3.00ms
+[I 200420 22:42:37 House:27] hit redis
+[D 200420 22:42:37 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:42:37 web:2162] 304 GET /api/house/area (127.0.0.1) 2.00ms
+[I 200420 22:42:48 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200420 22:42:48 log:110] {}
+[I 200420 22:42:48 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200420 22:42:48 log:110] {}
+[I 200420 22:42:48 log:110] SELECT DATABASE()
+[I 200420 22:42:48 log:110] {}
+[I 200420 22:42:48 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200420 22:42:48 log:110] {}
+[I 200420 22:42:48 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200420 22:42:48 log:110] {}
+[I 200420 22:42:48 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:42:48 log:110] {}
+[I 200420 22:42:48 log:110] BEGIN (implicit)
+[I 200420 22:42:48 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:42:48 log:110] {u'param_1': 1, u'up_mobile_1': u'15575958395'}
+[I 200420 22:42:48 web:2162] 200 POST /api/login (127.0.0.1) 65.00ms
+[I 200420 22:42:48 log:110] ROLLBACK
+[I 200420 22:42:58 web:2162] 200 GET /api/check_login (127.0.0.1) 3.00ms
+[D 200420 22:42:58 House:496] hit redis
+[I 200420 22:42:58 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:42:58 House:27] hit redis
+[D 200420 22:42:58 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:42:58 web:2162] 304 GET /api/house/area (127.0.0.1) 3.00ms
+[W 200420 22:42:58 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.00ms
+[I 200420 22:43:02 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:43:02 log:110] {}
+[I 200420 22:43:02 log:110] BEGIN (implicit)
+[I 200420 22:43:02 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:43:02 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[I 200420 22:43:02 web:2162] 304 GET /api/profile (127.0.0.1) 18.00ms
+[I 200420 22:43:02 log:110] ROLLBACK
+[I 200420 22:43:08 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[D 200420 22:43:08 House:496] hit redis
+[I 200420 22:43:08 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:43:08 House:27] hit redis
+[D 200420 22:43:08 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:43:08 web:2162] 304 GET /api/house/area (127.0.0.1) 3.00ms
+[W 200420 22:43:08 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:43:10 House:190] hit redis
+[D 200420 22:43:10 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:43:10 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[W 200420 22:43:10 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:43:23 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200420 22:43:23 House:190] hit redis
+[D 200420 22:43:23 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:43:23 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 5.00ms
+[I 200420 22:44:10 web:2162] 200 GET / (127.0.0.1) 532.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/css/reset.css (127.0.0.1) 2.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 70.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 12.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/css/ihome/main.css (127.0.0.1) 1.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/css/ihome/index.css (127.0.0.1) 13.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 7.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 27.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/js/template.js (127.0.0.1) 11.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 4.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/js/jquery.min.js (127.0.0.1) 101.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 71.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 68.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 15.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/images/logo@128x59.png (127.0.0.1) 3.00ms
+[I 200420 22:44:10 web:2162] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 24.00ms
+[I 200420 22:44:10 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[D 200420 22:44:10 House:496] hit redis
+[I 200420 22:44:10 web:2162] 200 GET /api/house/index (127.0.0.1) 3.00ms
+[I 200420 22:44:10 House:27] hit redis
+[D 200420 22:44:10 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:44:10 web:2162] 200 GET /api/house/area (127.0.0.1) 3.00ms
+[I 200420 22:44:12 web:2162] 200 GET /login.html (127.0.0.1) 61.00ms
+[I 200420 22:44:12 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 3.00ms
+[I 200420 22:44:12 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 2.00ms
+[I 200420 22:44:20 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:44:20 log:110] {}
+[I 200420 22:44:20 log:110] BEGIN (implicit)
+[I 200420 22:44:20 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:44:20 log:110] {u'param_1': 1, u'up_mobile_1': u'15575958395'}
+[I 200420 22:44:20 web:2162] 200 POST /api/login (127.0.0.1) 18.00ms
+[I 200420 22:44:20 log:110] ROLLBACK
+[I 200420 22:44:23 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 62.00ms
+[W 200420 22:44:30 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 22:44:30 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[D 200420 22:44:30 House:496] hit redis
+[I 200420 22:44:30 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 22:44:30 House:27] hit redis
+[D 200420 22:44:30 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:44:30 web:2162] 304 GET /api/house/area (127.0.0.1) 5.00ms
+[I 200420 22:44:33 web:2162] 200 GET /my.html (127.0.0.1) 3.00ms
+[I 200420 22:44:33 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 2.00ms
+[I 200420 22:44:33 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 5.00ms
+[I 200420 22:44:33 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 22:44:33 log:110] {}
+[I 200420 22:44:33 log:110] BEGIN (implicit)
+[I 200420 22:44:33 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 22:44:33 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[I 200420 22:44:33 web:2162] 200 GET /api/profile (127.0.0.1) 17.00ms
+[I 200420 22:44:33 log:110] ROLLBACK
+[I 200420 22:44:37 web:2162] 304 GET /api/check_login (127.0.0.1) 3.00ms
+[I 200420 22:44:37 House:27] hit redis
+[D 200420 22:44:37 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200420 22:44:37 web:2162] 304 GET /api/house/area (127.0.0.1) 4.00ms
+[D 200420 22:44:37 House:496] hit redis
+[I 200420 22:44:37 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[W 200420 22:44:37 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200420 22:44:42 web:2162] 200 GET /detail.html?id=12 (127.0.0.1) 2.00ms
+[I 200420 22:44:42 web:2162] 200 GET /static/css/ihome/detail.css (127.0.0.1) 2.00ms
+[I 200420 22:44:42 web:2162] 200 GET /static/js/ihome/detail.js (127.0.0.1) 2.00ms
+[I 200420 22:44:42 House:190] hit redis
+[D 200420 22:44:42 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:44:42 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[W 200420 22:44:42 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.00ms
+[I 200420 22:44:42 web:2162] 200 GET /static/images/houseicon_sprite.png (127.0.0.1) 2.00ms
+[I 200420 22:44:48 web:2162] 200 GET /booking.html?hid=12 (127.0.0.1) 3.00ms
+[I 200420 22:44:48 web:2162] 200 GET /static/js/ihome/booking.js (127.0.0.1) 2.00ms
+[I 200420 22:44:48 web:2162] 200 GET /static/css/ihome/booking.css (127.0.0.1) 2.00ms
+[I 200420 22:44:48 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200420 22:44:49 House:190] hit redis
+[D 200420 22:44:49 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 22:44:49 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[W 200420 22:45:44 web:2162] 405 POST /api/order (127.0.0.1) 1.00ms
+[E 200420 23:36:44 web:1670] Uncaught exception POST /api/order (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/order', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "E:\github\ihome\ihome_tornado\utils\commons.py", line 11, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "E:\github\ihome\ihome_tornado\handlers\Order.py", line 32, in post
+        ih_house_info = ihome_engine('ih_house_info')
+    TypeError: 'Engine' object is not callable
+[E 200420 23:36:44 web:2162] 500 POST /api/order (127.0.0.1) 10.00ms
+[I 200420 23:37:00 web:2162] 304 GET /booking.html?hid=12 (127.0.0.1) 483.00ms
+[I 200420 23:37:00 web:2162] 200 GET /static/js/ihome/booking.js (127.0.0.1) 3.00ms
+[I 200420 23:37:01 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200420 23:37:01 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SELECT DATABASE()
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_house_facility`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_house_image`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_order_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:37:01 log:110] {}
+[I 200420 23:37:01 log:110] BEGIN (implicit)
+[I 200420 23:37:01 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_user_id AS ih_house_info_hi_user_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_price AS ih_house_info_hi_price, ih_house_info.hi_ctime AS ih_house_info_hi_ctime, ih_area_info.ai_name AS ih_area_info_ai_name, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_name AS ih_user_profile_up_name, ih_house_info.hi_address AS ih_house_info_hi_address, ih_house_info.hi_room_count AS ih_house_info_hi_room_count, ih_house_info.hi_acreage AS ih_house_info_hi_acreage, ih_house_info.hi_house_unit AS ih_house_info_hi_house_unit, ih_house_info.hi_capacity AS ih_house_info_hi_capacity, ih_house_info.hi_beds AS ih_house_info_hi_beds, ih_house_info.hi_deposit AS ih_house_info_hi_deposit, ih_house_info.hi_min_days AS ih_house_info_hi_min_days, ih_house_info.hi_max_days AS ih_house_info_hi_max_days 
+    FROM ih_house_info, ih_area_info, ih_user_profile 
+    WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s AND ih_house_info.hi_user_id = ih_user_profile.up_user_id AND ih_house_info.hi_area_id = ih_area_info.ai_area_id 
+     LIMIT %(param_1)s
+[I 200420 23:37:01 log:110] {u'hi_house_id_1': u'12', u'param_1': 1}
+[I 200420 23:37:01 log:110] SELECT ih_house_image.hi_url AS ih_house_image_hi_url 
+    FROM ih_house_image 
+    WHERE ih_house_image.hi_house_id = %(hi_house_id_1)s
+[I 200420 23:37:01 log:110] {u'hi_house_id_1': u'12'}
+[I 200420 23:37:01 log:110] SELECT ih_house_facility.hf_facility_id AS ih_house_facility_hf_facility_id 
+    FROM ih_house_facility 
+    WHERE ih_house_facility.hf_house_id = %(hf_house_id_1)s
+[I 200420 23:37:01 log:110] {u'hf_house_id_1': u'12'}
+[I 200420 23:37:01 log:110] SELECT ih_order_info.oi_comment AS ih_order_info_oi_comment, ih_order_info.oi_utime AS ih_order_info_oi_utime, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile 
+    FROM ih_order_info, ih_user_profile 
+    WHERE ih_order_info.oi_house_id = %(oi_house_id_1)s AND ih_order_info.oi_status = %(oi_status_1)s AND ih_order_info.oi_user_id = ih_user_profile.up_user_id
+[I 200420 23:37:01 log:110] {u'oi_house_id_1': u'12', u'oi_status_1': 4}
+[I 200420 23:37:01 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 188.00ms
+[I 200420 23:37:01 log:110] ROLLBACK
+[I 200420 23:37:01 web:2162] 200 GET /favicon.ico (127.0.0.1) 82.00ms
+[E 200420 23:37:08 web:1670] Uncaught exception POST /api/order (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/order', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "E:\work_env\python2.7_env\lib\site-packages\tornado\web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "E:\github\ihome\ihome_tornado\utils\commons.py", line 11, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "E:\github\ihome\ihome_tornado\handlers\Order.py", line 32, in post
+        ih_house_info = ihome_engine('ih_house_info')
+    TypeError: 'Engine' object is not callable
+[E 200420 23:37:08 web:2162] 500 POST /api/order (127.0.0.1) 4.00ms
+[I 200420 23:39:29 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SELECT DATABASE()
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_order_info`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:39:29 log:110] {}
+[I 200420 23:39:29 log:110] BEGIN (implicit)
+[I 200420 23:39:29 log:110] SELECT ih_house_info.hi_user_id AS ih_house_info_hi_user_id, ih_house_info.hi_price AS ih_house_info_hi_price 
+    FROM ih_house_info 
+    WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 23:39:29 log:110] {u'hi_house_id_1': u'12', u'param_1': 1}
+[I 200420 23:39:29 log:110] SELECT count(%(count_2)s) AS count_1 
+    FROM ih_order_info 
+    WHERE ih_order_info.oi_house_id = %(oi_house_id_1)s AND ih_order_info.oi_begin_date < %(oi_begin_date_1)s AND ih_order_info.oi_end_date > %(oi_end_date_1)s
+[I 200420 23:39:29 log:110] {u'oi_house_id_1': u'12', u'oi_end_date_1': datetime.datetime(2020, 4, 20, 0, 0), u'oi_begin_date_1': datetime.datetime(2020, 4, 30, 0, 0), u'count_2': '*'}
+[I 200420 23:39:29 log:110] INSERT INTO ih_order_info (oi_user_id, oi_house_id, oi_begin_date, oi_end_date, oi_days, oi_house_price, oi_amount) VALUES (%(oi_user_id)s, %(oi_house_id)s, %(oi_begin_date)s, %(oi_end_date)s, %(oi_days)s, %(oi_house_price)s, %(oi_amount)s)
+[I 200420 23:39:29 log:110] {'oi_house_price': 10000, 'oi_days': 11, 'oi_begin_date': datetime.datetime(2020, 4, 20, 0, 0), 'oi_amount': 110000, 'oi_house_id': u'12', 'oi_end_date': datetime.datetime(2020, 4, 30, 0, 0), 'oi_user_id': 10006}
+[I 200420 23:39:29 web:2162] 200 POST /api/order (127.0.0.1) 132.00ms
+[I 200420 23:39:29 log:110] ROLLBACK
+[I 200420 23:39:29 web:2162] 200 GET /orders.html (127.0.0.1) 430.00ms
+[I 200420 23:39:29 web:2162] 200 GET /static/css/ihome/orders.css (127.0.0.1) 6.00ms
+[I 200420 23:39:29 web:2162] 200 GET /static/js/ihome/orders.js (127.0.0.1) 73.00ms
+[I 200420 23:39:30 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:39:30 log:110] {}
+[I 200420 23:39:30 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:39:30 log:110] {}
+[I 200420 23:39:30 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:39:30 log:110] {}
+[I 200420 23:39:30 log:110] BEGIN (implicit)
+[I 200420 23:39:30 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_order_count AS ih_house_info_hi_order_count, ih_house_info.hi_index_image_url AS ih_house_info_hi_index_image_url 
+    FROM ih_house_info ORDER BY ih_house_info.hi_order_count 
+     LIMIT %(param_1)s
+[I 200420 23:39:30 log:110] {u'param_1': 4}
+[I 200420 23:39:30 web:2162] 200 GET /api/order/my?role=custom (127.0.0.1) 41.00ms
+[I 200420 23:39:30 log:110] ROLLBACK
+[I 200420 23:39:35 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:39:35 log:110] {}
+[I 200420 23:39:35 log:110] BEGIN (implicit)
+[I 200420 23:39:35 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 23:39:35 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[I 200420 23:39:35 web:2162] 304 GET /api/profile (127.0.0.1) 19.00ms
+[I 200420 23:39:35 log:110] ROLLBACK
+[D 200420 23:39:38 House:496] hit redis
+[I 200420 23:39:38 web:2162] 304 GET /api/order/my?role=custom (127.0.0.1) 2.00ms
+[I 200420 23:39:42 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:39:42 log:110] {}
+[I 200420 23:39:42 log:110] BEGIN (implicit)
+[I 200420 23:39:42 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 23:39:42 log:110] {u'param_1': 1, u'up_user_id_1': 10006}
+[I 200420 23:39:42 web:2162] 304 GET /api/profile (127.0.0.1) 11.00ms
+[I 200420 23:39:42 log:110] ROLLBACK
+[W 200420 23:40:49 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.00ms
+[I 200420 23:40:49 web:2162] 304 GET /api/check_login (127.0.0.1) 4.00ms
+[D 200420 23:40:49 House:496] hit redis
+[I 200420 23:40:49 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200420 23:40:49 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 log:110] SELECT DATABASE()
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 log:110] BEGIN (implicit)
+[I 200420 23:40:49 log:110] SELECT ih_area_info.ai_area_id AS ih_area_info_ai_area_id, ih_area_info.ai_name AS ih_area_info_ai_name 
+    FROM ih_area_info
+[I 200420 23:40:49 log:110] {}
+[I 200420 23:40:49 web:2162] 200 GET /api/house/area (127.0.0.1) 83.00ms
+[I 200420 23:40:49 log:110] ROLLBACK
+[I 200420 23:40:57 House:190] hit redis
+[D 200420 23:40:57 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 23:40:57 web:2162] 200 GET /api/house/info?house_id=12 (127.0.0.1) 2.00ms
+[W 200420 23:40:57 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200420 23:41:00 web:2162] 304 GET /api/check_login (127.0.0.1) 2.00ms
+[I 200420 23:41:00 House:190] hit redis
+[D 200420 23:41:00 House:191] {"user_id": 10005, "capacity": 3, "title": "test2 \u6807\u9898", "min_days": 1, "comments": [], "acreage": 120, "beds": "\u53cc\u4eba\u5e8a2*1.8", "facilities": [1, 2, 3, 9, 13, 14, 15, 21, 22, 23], "room_count": 3, "max_days": 30, "deposit": 100000, "address": "\u5b9d\u6c11\u793e\u533a", "images": ["http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn", "http://q8iwsevuq.bkt.clouddn.com/FsHyv4WUHKUCpuIRftvwSO_FJWOG", "http://q8iwsevuq.bkt.clouddn.com/FoZg1QLpRi4vckq_W3tBBQe1wJxn"], "user_avatar": "http://q8iwsevuq.bkt.clouddn.com/FmT-Qpi7yYr_2GHYOnS6n4r5h8jY", "user_name": "zhowhen", "price": 10000, "unit": "\u4e09\u5ba4\u4e24\u5385\u4e24\u536b"}
+[I 200420 23:41:00 web:2162] 304 GET /api/house/info?house_id=12 (127.0.0.1) 3.00ms
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_order_info`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200420 23:41:06 log:110] {}
+[I 200420 23:41:06 log:110] BEGIN (implicit)
+[I 200420 23:41:06 log:110] SELECT ih_house_info.hi_user_id AS ih_house_info_hi_user_id, ih_house_info.hi_price AS ih_house_info_hi_price 
+    FROM ih_house_info 
+    WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s 
+     LIMIT %(param_1)s
+[I 200420 23:41:06 log:110] {u'hi_house_id_1': u'12', u'param_1': 1}
+[I 200420 23:41:06 log:110] SELECT count(%(count_2)s) AS count_1 
+    FROM ih_order_info 
+    WHERE ih_order_info.oi_house_id = %(oi_house_id_1)s AND ih_order_info.oi_begin_date < %(oi_begin_date_1)s AND ih_order_info.oi_end_date > %(oi_end_date_1)s
+[I 200420 23:41:06 log:110] {u'oi_house_id_1': u'12', u'oi_end_date_1': datetime.datetime(2020, 4, 20, 0, 0), u'oi_begin_date_1': datetime.datetime(2020, 4, 30, 0, 0), u'count_2': '*'}
+[I 200420 23:41:06 log:110] INSERT INTO ih_order_info (oi_user_id, oi_house_id, oi_begin_date, oi_end_date, oi_days, oi_house_price, oi_amount) VALUES (%(oi_user_id)s, %(oi_house_id)s, %(oi_begin_date)s, %(oi_end_date)s, %(oi_days)s, %(oi_house_price)s, %(oi_amount)s)
+[I 200420 23:41:06 log:110] {'oi_house_price': 10000, 'oi_days': 11, 'oi_begin_date': datetime.datetime(2020, 4, 20, 0, 0), 'oi_amount': 110000, 'oi_house_id': u'12', 'oi_end_date': datetime.datetime(2020, 4, 30, 0, 0), 'oi_user_id': 10006}
+[I 200420 23:41:06 log:110] COMMIT
+[I 200420 23:41:06 web:2162] 200 POST /api/order (127.0.0.1) 226.00ms
+[D 200420 23:41:06 House:496] hit redis
+[I 200420 23:41:06 web:2162] 304 GET /api/order/my?role=custom (127.0.0.1) 3.00ms
