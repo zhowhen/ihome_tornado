@@ -174,7 +174,7 @@ class HouseInfoHandler(BaseHandler):
         house_id = self.get_argument('house_id')
 
         # 获取当前登录用户user_id
-        self.session = Session(self)
+        self.get_current_user()
         user_id = self.session.data.get('user_id')
 
         # 验证参数
@@ -383,6 +383,18 @@ class HouseListHandler(BaseHandler):
         sql_total_count = "select count(distinct hi_house_id) count " \
                           "from ih_house_info inner join ih_user_profile on hi_user_id=up_user_id " \
                           "left join ih_order_info on hi_house_id=oi_house_id"
+
+        # 查询总页数
+        try:
+            ret_total = self.db.execute(sql_total_count).scalar()  # 返回统计数量
+        except Exception as e:
+            logging.error(e)
+            total = -1
+        else:
+            total = int(math.ceil(ret_total / float(constants.HOUSE_LIST_PAGE_CAPACITY)))
+            if page > total:
+                return self.write(dict(errno=RET.OK, errmsg='OK', houses=[], total=total))
+
         sql_where = []
         sql_params = {}
         if start_date and end_date:
@@ -430,14 +442,7 @@ class HouseListHandler(BaseHandler):
         except Exception as e:
             logging.error(e)
             return self.write(dict(errno=RET.DBERR, errmsg='get data error'))
-        # 查询总页数
-        try:
-            ret_total = self.db.execute(sql_total_count).scalar()  # 返回统计数量
-        except Exception as e:
-            logging.error(e)
-            total = -1
-        else:
-            total = int(math.ceil(ret_total / float(constants.HOUSE_LIST_PAGE_CAPACITY)))
+
         # 构建返回数据
         houses = []
         if ret:
@@ -486,7 +491,7 @@ class HouseIndexHandler(BaseHandler):
         except Exception as e:
             logging.error(e)
             ret = None
-        # 如果有就直接返回，都不用loadsl
+        # 如果有就直接返回，都不用loads
         if ret:
             logging.debug('hit redis')
             return self.write(ret)
