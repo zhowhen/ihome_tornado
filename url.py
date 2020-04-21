@@ -25,10 +25,10 @@ handlers = [
     (r'^/api/house/index$', House.HouseIndexHandler),
 
     (r'^/api/order$', Order.OrderHandler),
-    (r'^/api/order/my$', House.HouseIndexHandler),
-    (r'^/api/order/accept$', House.HouseIndexHandler),
-    (r'^/api/order/reject$', House.HouseIndexHandler),
-    (r'^/api/order/comment$', House.HouseIndexHandler),
+    (r'^/api/order/my$', Order.MyOrdersHandler),
+    (r'^/api/order/accept$', Order.AcceptOrderHandler),
+    (r'^/api/order/reject$', Order.RejectOrderHandler),
+    (r'^/api/order/comment$', Order.OrderCommentHandler),
 
     (r'/(.*)', StaticFileHandler, dict(path=os.path.join(os.path.dirname(__file__), 'html'),
                                        default_filename='index.html')),
