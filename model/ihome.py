@@ -3,13 +3,14 @@
 from sqlalchemy import Table, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy_engine import ihome_engine
+
 BaseModel = declarative_base()
 
 
 # 定义一个方法用来把数据库的表映射过来
-def ihome_model(tableName):
+def ihome_model(table_name):
     class BaseClass(BaseModel):
-        __tablename__ = tableName
+        __tablename__ = table_name
         metadata = MetaData(bind=ihome_engine)
 
         # 把表映射过来

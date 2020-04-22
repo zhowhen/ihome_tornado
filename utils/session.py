@@ -6,7 +6,9 @@ import config
 
 
 class Session(object):
-    """"""
+    """
+    定义一个Session类
+    """
 
     def __init__(self, request_handler):
         self.request_handler = request_handler

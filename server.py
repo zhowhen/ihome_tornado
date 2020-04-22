@@ -26,7 +26,7 @@ class Application(tornado.web.Application):
         #     user=config.mysql_options['user'],
         #     password=config.mysql_options['password']
         # )
-        # 创建一个数据库会话，用来查询
+        # 创建一个数据库会话，用来操作增删改查
         self.db = scoped_session(sessionmaker(
             bind=ihome_engine,
             autocommit=False,

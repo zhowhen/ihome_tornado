@@ -1,7 +1,7 @@
 #  coding:utf-8
 
 
-from qiniu import Auth, put_data, etag
+from qiniu import Auth, put_data
 import qiniu.config
 #需要填写你的 Access Key 和 Secret Key
 access_key = '73WBXdczhnRIANG4c6fTXt9dhip1bIl0UsiN43rV'
