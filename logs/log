@@ -3960,3 +3960,216 @@
 [I 200422 00:09:32 web:2162] 304 GET /api/house/area (192.168.43.1) 0.00ms
 [D 200422 00:09:32 House:496] hit redis
 [I 200422 00:09:32 web:2162] 304 GET /api/house/index (192.168.43.1) 0.00ms
+[I 200422 23:18:45 web:2162] 304 GET / (127.0.0.1) 551.00ms
+[I 200422 23:18:45 web:2162] 304 GET /static/js/ihome/index.js (127.0.0.1) 7.00ms
+[I 200422 23:18:45 House:27] hit redis
+[D 200422 23:18:45 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200422 23:18:45 web:2162] 304 GET /api/house/area (127.0.0.1) 12.00ms
+[I 200422 23:18:45 web:2162] 304 GET /api/check_login (127.0.0.1) 1.00ms
+[I 200422 23:18:45 log:110] SHOW VARIABLES LIKE 'sql_mode'
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SHOW VARIABLES LIKE 'lower_case_table_names'
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SELECT DATABASE()
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:18:45 log:110] {}
+[I 200422 23:18:45 log:110] BEGIN (implicit)
+[I 200422 23:18:45 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_order_count AS ih_house_info_hi_order_count, ih_house_info.hi_index_image_url AS ih_house_info_hi_index_image_url 
+    FROM ih_house_info ORDER BY ih_house_info.hi_order_count 
+     LIMIT %(param_1)s
+[I 200422 23:18:45 log:110] {u'param_1': 4}
+[I 200422 23:18:45 web:2162] 200 GET /api/house/index (127.0.0.1) 294.00ms
+[I 200422 23:18:45 log:110] ROLLBACK
+[W 200422 23:18:53 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 43.00ms
+[I 200422 23:18:53 web:2162] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 67.00ms
+[I 200422 23:19:34 web:2162] 200 GET /login.html (127.0.0.1) 80.00ms
+[I 200422 23:19:35 web:2162] 200 GET /static/css/ihome/login.css (127.0.0.1) 16.00ms
+[I 200422 23:19:35 web:2162] 200 GET /static/js/ihome/login.js (127.0.0.1) 15.00ms
+[I 200422 23:19:43 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:19:43 log:110] {}
+[I 200422 23:19:44 log:110] BEGIN (implicit)
+[I 200422 23:19:44 log:110] SELECT ih_user_profile.up_user_id AS ih_user_profile_up_user_id, ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_passwd AS ih_user_profile_up_passwd, ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card, ih_user_profile.up_avatar AS ih_user_profile_up_avatar, ih_user_profile.up_admin AS ih_user_profile_up_admin, ih_user_profile.up_utime AS ih_user_profile_up_utime, ih_user_profile.up_ctime AS ih_user_profile_up_ctime 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_mobile = %(up_mobile_1)s 
+     LIMIT %(param_1)s
+[I 200422 23:19:44 log:110] {u'param_1': 1, u'up_mobile_1': u'18038009493'}
+[I 200422 23:19:44 web:2162] 200 POST /api/login (127.0.0.1) 210.00ms
+[I 200422 23:19:44 log:110] ROLLBACK
+[W 200422 23:19:53 web:2162] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.00ms
+[I 200422 23:19:53 web:2162] 200 GET /api/check_login (127.0.0.1) 2.00ms
+[D 200422 23:19:53 House:496] hit redis
+[I 200422 23:19:53 web:2162] 304 GET /api/house/index (127.0.0.1) 2.00ms
+[I 200422 23:19:53 House:27] hit redis
+[D 200422 23:19:53 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200422 23:19:53 web:2162] 304 GET /api/house/area (127.0.0.1) 3.00ms
+[I 200422 23:19:56 web:2162] 200 GET /my.html (127.0.0.1) 11.00ms
+[I 200422 23:19:56 web:2162] 200 GET /static/css/ihome/my.css (127.0.0.1) 24.00ms
+[I 200422 23:19:56 web:2162] 200 GET /static/js/ihome/my.js (127.0.0.1) 1.00ms
+[I 200422 23:19:57 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:19:57 log:110] {}
+[I 200422 23:19:57 log:110] BEGIN (implicit)
+[I 200422 23:19:57 log:110] SELECT ih_user_profile.up_name AS ih_user_profile_up_name, ih_user_profile.up_mobile AS ih_user_profile_up_mobile, ih_user_profile.up_avatar AS ih_user_profile_up_avatar 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200422 23:19:57 log:110] {u'param_1': 1, u'up_user_id_1': 10005}
+[I 200422 23:19:57 web:2162] 200 GET /api/profile (127.0.0.1) 16.00ms
+[I 200422 23:19:57 log:110] ROLLBACK
+[I 200422 23:20:00 web:2162] 200 GET /myhouse.html (127.0.0.1) 8.00ms
+[I 200422 23:20:00 web:2162] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 5.00ms
+[I 200422 23:20:00 web:2162] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 5.00ms
+[I 200422 23:20:00 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:20:00 log:110] {}
+[I 200422 23:20:00 log:110] BEGIN (implicit)
+[I 200422 23:20:00 log:110] SELECT ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200422 23:20:00 log:110] {u'param_1': 1, u'up_user_id_1': 10005}
+[I 200422 23:20:00 web:2162] 200 GET /api/profile/auth (127.0.0.1) 20.00ms
+[I 200422 23:20:00 log:110] ROLLBACK
+[I 200422 23:20:00 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:20:00 log:110] {}
+[I 200422 23:20:00 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:20:00 log:110] {}
+[I 200422 23:20:00 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:20:00 log:110] {}
+[I 200422 23:20:00 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:20:00 log:110] {}
+[I 200422 23:20:00 log:110] BEGIN (implicit)
+[I 200422 23:20:00 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_price AS ih_house_info_hi_price, ih_house_info.hi_ctime AS ih_house_info_hi_ctime, ih_area_info.ai_name AS ih_area_info_ai_name, ih_house_info.hi_index_image_url AS ih_house_info_hi_index_image_url 
+    FROM ih_house_info, ih_area_info 
+    WHERE ih_house_info.hi_user_id = %(hi_user_id_1)s AND ih_house_info.hi_area_id = ih_area_info.ai_area_id
+[I 200422 23:20:00 log:110] {u'hi_user_id_1': 10005}
+[I 200422 23:20:00 web:2162] 200 GET /api/house/my (127.0.0.1) 43.00ms
+[I 200422 23:20:00 log:110] ROLLBACK
+[I 200422 23:20:04 web:2162] 200 GET /newhouse.html (127.0.0.1) 3.00ms
+[I 200422 23:20:05 web:2162] 200 GET /static/css/ihome/newhouse.css (127.0.0.1) 14.00ms
+[I 200422 23:20:05 web:2162] 200 GET /static/js/ihome/newhouse.js (127.0.0.1) 23.00ms
+[I 200422 23:20:05 web:2162] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 3.00ms
+[I 200422 23:20:05 House:27] hit redis
+[D 200422 23:20:05 House:28] [{"area_id": 1, "name": "\u5357\u5c71\u533a"}, {"area_id": 2, "name": "\u76d0\u7530\u533a"}, {"area_id": 3, "name": "\u798f\u7530\u533a"}, {"area_id": 4, "name": "\u7f57\u6e56\u533a"}, {"area_id": 5, "name": "\u9f99\u5c97\u533a"}, {"area_id": 6, "name": "\u576a\u5c71\u533a"}, {"area_id": 7, "name": "\u5149\u660e\u533a"}, {"area_id": 8, "name": "\u9f99\u534e\u533a"}, {"area_id": 9, "name": "\u5b9d\u5b89\u533a"}, {"area_id": 10, "name": "\u5927\u9e4f\u65b0\u533a"}, {"area_id": 11, "name": "\u6df1\u6c55\u7279\u522b\u5408\u4f5c\u533a"}]
+[I 200422 23:20:05 web:2162] 304 GET /api/house/area (127.0.0.1) 2.00ms
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_house_facility`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:21:53 log:110] {}
+[I 200422 23:21:53 log:110] BEGIN (implicit)
+[I 200422 23:21:53 log:110] INSERT INTO ih_house_info (hi_user_id, hi_title, hi_price, hi_area_id, hi_address, hi_room_count, hi_acreage, hi_house_unit, hi_capacity, hi_beds, hi_deposit, hi_min_days, hi_max_days) VALUES (%(hi_user_id)s, %(hi_title)s, %(hi_price)s, %(hi_area_id)s, %(hi_address)s, %(hi_room_count)s, %(hi_acreage)s, %(hi_house_unit)s, %(hi_capacity)s, %(hi_beds)s, %(hi_deposit)s, %(hi_min_days)s, %(hi_max_days)s)
+[I 200422 23:21:53 log:110] {'hi_capacity': 5, 'hi_min_days': 7, 'hi_room_count': 5, 'hi_max_days': 30, 'hi_deposit': 1000000, 'hi_house_unit': u'\u4e09\u5ba4\u4e24\u5385\u4e24\u536b', 'hi_price': 20000, 'hi_title': u'test123', 'hi_address': u'\u8d2d\u7269\u516c\u56ed', 'hi_beds': u'\u53cc\u4eba\u5e8a2*1.8*3', 'hi_area_id': u'3', 'hi_user_id': 10005, 'hi_acreage': 150}
+[I 200422 23:21:53 log:110] INSERT INTO ih_house_facility (hf_house_id, hf_facility_id) VALUES (%(hf_house_id)s, %(hf_facility_id)s)
+[I 200422 23:21:53 log:110] ({'hf_facility_id': u'1', 'hf_house_id': 14}, {'hf_facility_id': u'2', 'hf_house_id': 14}, {'hf_facility_id': u'3', 'hf_house_id': 14}, {'hf_facility_id': u'7', 'hf_house_id': 14}, {'hf_facility_id': u'8', 'hf_house_id': 14}, {'hf_facility_id': u'9', 'hf_house_id': 14}, {'hf_facility_id': u'10', 'hf_house_id': 14}, {'hf_facility_id': u'11', 'hf_house_id': 14}  ... displaying 10 of 18 total bound parameter sets ...  {'hf_facility_id': u'22', 'hf_house_id': 14}, {'hf_facility_id': u'23', 'hf_house_id': 14})
+[I 200422 23:21:53 log:110] COMMIT
+[I 200422 23:21:53 web:2162] 200 POST /api/house/info (127.0.0.1) 430.00ms
+[D 200422 23:35:54 retry:210] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 200422 23:35:54 connectionpool:205] Starting new HTTP connection (1): up-z2.qiniu.com:80
+[D 200422 23:35:58 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_house_image`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:35:58 log:110] {}
+[I 200422 23:35:58 log:110] BEGIN (implicit)
+[I 200422 23:35:58 log:110] INSERT INTO ih_house_image (hi_house_id, hi_url) VALUES (%(hi_house_id)s, %(hi_url)s)
+[I 200422 23:35:58 log:110] {'hi_url': u'Fm1C-sgpZmHemEtZv7EpeMvqCIPr', 'hi_house_id': u'14'}
+[I 200422 23:35:58 log:110] UPDATE ih_house_info SET hi_index_image_url=%(hi_index_image_url)s WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s AND ih_house_info.hi_index_image_url IS NULL
+[I 200422 23:35:58 log:110] {u'hi_house_id_1': u'14', 'hi_index_image_url': u'Fm1C-sgpZmHemEtZv7EpeMvqCIPr'}
+[I 200422 23:35:58 log:110] COMMIT
+[I 200422 23:35:58 web:2162] 200 POST /api/house/image (127.0.0.1) 3715.00ms
+[D 200422 23:36:17 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_house_image`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:36:17 log:110] {}
+[I 200422 23:36:17 log:110] BEGIN (implicit)
+[I 200422 23:36:17 log:110] INSERT INTO ih_house_image (hi_house_id, hi_url) VALUES (%(hi_house_id)s, %(hi_url)s)
+[I 200422 23:36:17 log:110] {'hi_url': u'Ft2wpckCpXbohrbvyTr8edP3p5MK', 'hi_house_id': u'14'}
+[I 200422 23:36:17 log:110] UPDATE ih_house_info SET hi_index_image_url=%(hi_index_image_url)s WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s AND ih_house_info.hi_index_image_url IS NULL
+[I 200422 23:36:17 log:110] {u'hi_house_id_1': u'14', 'hi_index_image_url': u'Ft2wpckCpXbohrbvyTr8edP3p5MK'}
+[I 200422 23:36:17 log:110] COMMIT
+[I 200422 23:36:18 web:2162] 200 POST /api/house/image (127.0.0.1) 635.00ms
+[D 200422 23:37:00 connectionpool:393] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_house_image`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:37:00 log:110] {}
+[I 200422 23:37:00 log:110] BEGIN (implicit)
+[I 200422 23:37:00 log:110] INSERT INTO ih_house_image (hi_house_id, hi_url) VALUES (%(hi_house_id)s, %(hi_url)s)
+[I 200422 23:37:00 log:110] {'hi_url': u'Fpe8tG25L_xmUhkieoorG8eSpTww', 'hi_house_id': u'14'}
+[I 200422 23:37:00 log:110] UPDATE ih_house_info SET hi_index_image_url=%(hi_index_image_url)s WHERE ih_house_info.hi_house_id = %(hi_house_id_1)s AND ih_house_info.hi_index_image_url IS NULL
+[I 200422 23:37:00 log:110] {u'hi_house_id_1': u'14', 'hi_index_image_url': u'Fpe8tG25L_xmUhkieoorG8eSpTww'}
+[I 200422 23:37:00 log:110] COMMIT
+[I 200422 23:37:00 web:2162] 200 POST /api/house/image (127.0.0.1) 1695.00ms
+[I 200422 23:37:04 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:37:04 log:110] {}
+[I 200422 23:37:04 log:110] BEGIN (implicit)
+[I 200422 23:37:04 log:110] SELECT ih_user_profile.up_real_name AS ih_user_profile_up_real_name, ih_user_profile.up_id_card AS ih_user_profile_up_id_card 
+    FROM ih_user_profile 
+    WHERE ih_user_profile.up_user_id = %(up_user_id_1)s 
+     LIMIT %(param_1)s
+[I 200422 23:37:04 log:110] {u'param_1': 1, u'up_user_id_1': 10005}
+[I 200422 23:37:04 web:2162] 304 GET /api/profile/auth (127.0.0.1) 25.00ms
+[I 200422 23:37:04 log:110] ROLLBACK
+[I 200422 23:37:04 log:110] SHOW CREATE TABLE `ih_house_info`
+[I 200422 23:37:04 log:110] {}
+[I 200422 23:37:04 log:110] SHOW CREATE TABLE `ih_user_profile`
+[I 200422 23:37:04 log:110] {}
+[I 200422 23:37:04 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:37:04 log:110] {}
+[I 200422 23:37:04 log:110] SHOW CREATE TABLE `ih_area_info`
+[I 200422 23:37:04 log:110] {}
+[I 200422 23:37:04 log:110] BEGIN (implicit)
+[I 200422 23:37:04 log:110] SELECT ih_house_info.hi_house_id AS ih_house_info_hi_house_id, ih_house_info.hi_title AS ih_house_info_hi_title, ih_house_info.hi_price AS ih_house_info_hi_price, ih_house_info.hi_ctime AS ih_house_info_hi_ctime, ih_area_info.ai_name AS ih_area_info_ai_name, ih_house_info.hi_index_image_url AS ih_house_info_hi_index_image_url 
+    FROM ih_house_info, ih_area_info 
+    WHERE ih_house_info.hi_user_id = %(hi_user_id_1)s AND ih_house_info.hi_area_id = ih_area_info.ai_area_id
+[I 200422 23:37:04 log:110] {u'hi_user_id_1': 10005}
+[I 200422 23:37:04 web:2162] 200 GET /api/house/my (127.0.0.1) 49.00ms
+[I 200422 23:37:04 log:110] ROLLBACK
