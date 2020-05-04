@@ -48,7 +48,7 @@ class OrderHandler(BaseHandler):
         if ret.hi_user_id == user_id:
             return self.write(dict(errno=RET.ROLEERR, errmsg='拒绝此操作'))
 
-        house_priec = ret.hi_price
+        house_price = ret.hi_price
 
         # 判断日期内是否有订单
         # 查询数据库里当前房屋此时间段有没有订单
@@ -70,8 +70,8 @@ class OrderHandler(BaseHandler):
             oi_begin_date=start_date,
             oi_end_date=end_date,
             oi_days=days,
-            oi_house_price=house_priec,
-            oi_amount=days*house_priec
+            oi_house_price=house_price,
+            oi_amount=days*house_price
         )
         try:
             self.db.execute(ih_order_info.__table__.insert(), item)
@@ -79,6 +79,8 @@ class OrderHandler(BaseHandler):
         except Exception as e:
             logging.error(e)
             return self.write(dict(errno=RET.DBERR, errmsg='生成订单失败'))
+
+        # 调用支付接口
 
         # 返回数据
         self.write(dict(errno=RET.OK, errmsg='OK'))
@@ -96,6 +98,9 @@ class MyOrdersHandler(BaseHandler):
 
         # 检测参数
         self.check_args(role)
+        # 角色必须为房东或房客
+        if role not in ['custom', 'landlord']:
+            return self.write(dict(errno=RET.PARAMERR, errmsg='参数有误'))
 
         # 查询数据库
         ih_order_info = ihome_model('ih_order_info')
@@ -117,6 +122,7 @@ class MyOrdersHandler(BaseHandler):
                                     ).filter(ih_order_info.oi_user_id == user_id,
                                              ih_order_info.oi_house_id == ih_house_info.hi_house_id).all()
             else:
+                # 角色是房东
                 ret = self.db.query(ih_order_info.oi_order_id,
                                     ih_order_info.oi_house_id,
                                     ih_order_info.oi_ctime,

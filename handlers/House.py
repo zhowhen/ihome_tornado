@@ -398,14 +398,15 @@ class HouseListHandler(BaseHandler):
         sql_where = []
         sql_params = {}
         if start_date and end_date:
-            sql_where.append('(not (oi_begin_date<={end_date} and oi_end_date>={start_date}))')
+            sql_where.append('(not (oi_begin_date<={end_date} and oi_end_date>={start_date})) or'
+                             ' (oi_begin_date is null and oi_end_date is null)')
             sql_params['start_date'] = start_date
             sql_params['end_date'] = end_date
         elif start_date:
-            sql_where.append('oi_end_date < {start_date}')
+            sql_where.append('oi_end_date < {start_date} or oi_end_date is null')
             sql_params['start_date'] = start_date
         elif end_date:
-            sql_where.append('oi_begin_date > {end_date}')
+            sql_where.append('oi_begin_date > {end_date} or oi_begin_date is null')
             sql_params['end_date'] = end_date
 
         if area_id:
