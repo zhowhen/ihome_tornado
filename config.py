@@ -6,23 +6,24 @@ settings = {
     "static_path": os.path.join(os.path.dirname(__file__), 'static'),
     "template_path": os.path.join(os.path.dirname(__file__), 'template'),
     "cookie_secret": "n1jjld6rQF2r58IhjQRy2FGC2VaU8kFFr4mf7FUcr6w=",
-    # "xsrf_cookies": True,
+    "xsrf_cookies": True,
     "debug": True,
 }
 
 # mysql
 mysql_options = dict(
-    host="127.0.0.1",
+    host="106.52.238.231",
     database="ihome",
     user="root",
-    password="123456",
+    password="*****",
     port=3306,
 )
 
 # redis
 redis_options = dict(
-    host="127.0.0.1",
-    port=6379
+    host="106.52.238.231",
+    port=6379,
+    password='******'
 )
 
 # log file

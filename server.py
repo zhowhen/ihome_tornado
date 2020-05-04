@@ -11,7 +11,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy_engine import ihome_engine
 from tornado.options import define, options
 
-define("port", type=int, default=8000, help="run server on the given port")
+define("port", type=int, default=8001, help="run server on the given port")
 
 
 class Application(tornado.web.Application):

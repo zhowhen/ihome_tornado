@@ -322,3 +322,88 @@ method：get
 		},
 	]
 }
+
+下单接口
+描述:客户订房接口
+URL: /api/order
+method：post
+传入参数：json
+{
+	"house_id":"房屋id",
+	"start_date":"开始日期",
+	"end_date":"结束日期",
+}
+返回值：
+{
+    "errno":0,
+    "errmsg":"OK",
+}
+
+我的订单/客户订单
+描述:查看订单接口
+URL: /api/order/my
+method：get
+传入参数：
+参数名称	类型	是否必须	说明
+role  		string		是		==>>用户类型（房东或房客）
+返回值：
+{
+	"errno": "0",
+	"orders": [
+		{
+			"comment": "自己要住",
+			"status": 6,
+			"ctime": "2020-04-20 23:41:06",
+			"end_date": "2020-04-30",
+			"title": "test2 标题",
+			"order_id": 2,
+			"days": 11,
+			"amount": 110000,
+			"img_url": "http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn",
+			"start_date": "2020-04-20"
+		},
+		{
+			"comment": "自己要住",
+			"status": 6,
+			"ctime": "2020-04-20 23:41:06",
+			"end_date": "2020-04-30",
+			"title": "test2 标题",
+			"order_id": 2,
+			"days": 11,
+			"amount": 110000,
+			"img_url": "http://q8iwsevuq.bkt.clouddn.com/FsxYqPJ-fJtVZZH2LEshL7o9Ivxn",
+			"start_date": "2020-04-20"
+		},
+	],
+	"errmsg": "OK"
+}
+
+接单接口
+描述:接受订单接口
+URL: /api/order/accept
+method：post
+传入参数：
+{
+	"order_id":"订单ID"
+}
+返回值：
+{
+	"errno": "0",
+	"errmsg": "OK"
+}
+
+拒单接口
+描述:拒绝订单接口
+URL: /api/order/reject
+method：post
+传入参数：
+{
+	"order_id":"订单ID",
+	"reject_reason":"拒绝理由",
+}
+返回值：
+{
+	"errno": "0",
+	"errmsg": "OK"
+}
+
