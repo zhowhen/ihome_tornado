@@ -28,7 +28,7 @@ redis_options = dict(
 
 # log file
 log_level = 'debug'
-log_file = os.path.join(os.path.dirname(__file__), 'logs/log')
+log_file = r'E:\github\logs\log'
 
 # session
 session_expires_second = 86400  # session有效期（s）
