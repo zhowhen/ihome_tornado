@@ -30,8 +30,10 @@ class BaseHandler(RequestHandler):
         else:
             self.json_args = None
 
-    def write_error(self, status_code, **kwargs):
-        return self.write(dict(errno=status_code, errmsg=kwargs.get('errmsg')))
+    def write_error(self, **kwargs):
+        print kwargs
+        self.write(kwargs)
+        raise self.finish()
 
     def set_default_headers(self):
         self.set_header("Content-Type", "application/json; charset=UTF-8")
@@ -51,4 +53,3 @@ class StaticFileHandler(tornado.web.StaticFileHandler):
     """"""
     def __init__(self, *args, **kwargs):
         super(StaticFileHandler, self).__init__(*args, **kwargs)
-        self.xsrf_token

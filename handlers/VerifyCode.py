@@ -1,8 +1,10 @@
 #  coding:utf-8
 from .BaseHandler import BaseHandler
 from utils.captcha.captcha import captcha
-from libs.yuntongxun.CCP import ccp
+# from libs.yuntongxun.CCP import ccp
 from utils.response_code import RET
+from libs.yuntongxun.async_ccp import sendTemplateSMS
+import tornado.gen
 import logging
 import constants
 import random
@@ -34,10 +36,12 @@ class ImageCodeHandler(BaseHandler):
         self.write(image)
 
 
+# 异步的方式发送手机验证码
 class PhoneCodeHandler(BaseHandler):
     """
     手机验证码
     """
+    @tornado.gen.coroutine
     def post(self, *args, **kwargs):
         # 获取参数
         # 判断图片验证码
@@ -52,18 +56,19 @@ class PhoneCodeHandler(BaseHandler):
 
         # 手机号码验证
         if not re.match(r'1[34578]\d{9}', mobile):
-            return self.write(dict(errno=RET.PARAMERR, errmsg='手机号码格式错误'))
+           self.write_error(errno=RET.PARAMERR, errmsg='手机号码格式错误')
 
         # 判断图片验证码
         try:
             real_image_code_text = self.redis.get('image_code_%s' % image_code_id)
         except Exception as e:
             logging.error(e)
-            return self.write(dict(errno=RET.DBERR, errmsg='redis查询错误'))
+            self.write_error(errno=RET.DBERR, errmsg='redis查询错误')
+            real_image_code_text = None
         if not real_image_code_text:
-            return self.write(dict(errno=RET.NODATA, errmsg='验证码已过期'))
+            self.write_error(errno=RET.NODATA, errmsg='验证码已过期')
         if real_image_code_text.upper() != image_code_text.upper():
-            return self.write(dict(errno=RET.DATAERR, errmsg='验证码错误'))
+            self.write_error(errno=RET.DATAERR, errmsg='验证码错误')
 
         # 验证图片验证码成功后，生成随机短信验证码
         sms_code = '%04d' % random.randint(0, 9999)
@@ -71,18 +76,16 @@ class PhoneCodeHandler(BaseHandler):
             self.redis.setex('sms_code_%s' % mobile, constants.SMS_CODE_EXPIRES_SECONDS, sms_code)
         except Exception as e:
             logging.error(e)
-            return self.write(dict(errno=RET.DBERR, errmsg='生成短信验证码错误'))
+            self.write_error(errno=RET.DBERR, errmsg='生成短信验证码错误')
 
-        # 发送短信
-        try:
-            res = ccp.sendTemplateSMS(mobile, [sms_code, constants.SMS_CODE_EXPIRES_SECONDS/60], 1)
-        except Exception as e:
-            logging.error(e)
-            return self.write(dict(errno=RET.THIRDERR, errmsg='发送短信验证码失败'))
-
+        # 异步发送短信
+        res = yield sendTemplateSMS(mobile, [sms_code, constants.SMS_CODE_EXPIRES_SECONDS/60], 1)
         # 验证短信是否发送成功
         if res.get('statusCode') != '000000':
-            return self.write(dict(errno=RET.THIRDERR, errmsg=res.get('statusMsg')))
-
+           self.write_error(errno=RET.THIRDERR, errmsg=res.get('statusMsg'))
         # 成功 返回OK
         self.write(dict(errno=RET.OK, errmsg='OK'))
+
+
+# 同步的方式发送短信验证码
+# class PhoneCodeHandler(BaseHandler):
