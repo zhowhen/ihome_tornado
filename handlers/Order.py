@@ -195,6 +195,7 @@ class AcceptOrderHandler(BaseHandler):
         # 返回数据
         self.write(dict(errno=RET.OK, errmsg='OK'))
 
+
 class RejectOrderHandler(BaseHandler):
     """"""
     @require_login
@@ -242,7 +243,7 @@ class OrderCommentHandler(BaseHandler):
         ih_order_info = ihome_model('ih_order_info')
 
         try:
-            self.db.query().filter(ih_order_info.oi_user_id == user_id,
+            self.db.query(ih_order_info).filter(ih_order_info.oi_user_id == user_id,
                                    ih_order_info.oi_order_id == order_id,
                                    ih_order_info.oi_status == 3).update(dict(oi_comment=comment,
                                                                              oi_status=4))
