@@ -5,7 +5,7 @@ from utils.response_code import RET
 from model.ihome import ihome_model
 from utils.commons import require_login
 from utils.image_storage import storage
-from utils.session import Session
+import datetime
 import constants
 import config
 import logging
@@ -287,12 +287,12 @@ class HouseInfoHandler(BaseHandler):
             for i in ret:
                 item = dict(
                     user_name=i.up_name if i.up_name != i.up_mobile else '匿名用户',
-                    ctime=i.oi_utime,
+                    ctime=datetime.datetime.strftime(i.oi_utime, '%Y-%m-%d %H:%M:%S'),
                     content=i.oi_comment
                 )
                 comments.append(item)
         data['comments'] = comments
-
+        print data
         # 存入redis缓存
         try:
             self.redis.setex('house_detail_%s' % house_id, constants.HOUSE_DETAIL_EXPIRES_SECONDS, json.dumps(data))
@@ -398,15 +398,18 @@ class HouseListHandler(BaseHandler):
         sql_where = []
         sql_params = {}
         if start_date and end_date:
-            sql_where.append('(not (oi_begin_date<={end_date} and oi_end_date>={start_date})) or'
-                             ' (oi_begin_date is null and oi_end_date is null)')
+            sql_where.append('((oi_begin_date > "{end_date}") or '
+                             '(oi_end_date < "{start_date}")) or '
+                             '(oi_begin_date is null and oi_end_date is null)')
             sql_params['start_date'] = start_date
             sql_params['end_date'] = end_date
         elif start_date:
-            sql_where.append('oi_end_date < {start_date} or oi_end_date is null')
+            sql_where.append('oi_end_date < "{start_date}" or '
+                             '(oi_begin_date is null and oi_end_date is null)')
             sql_params['start_date'] = start_date
         elif end_date:
-            sql_where.append('oi_begin_date > {end_date} or oi_begin_date is null')
+            sql_where.append('oi_begin_date > "{end_date}" or '
+                             '(oi_begin_date is null and oi_end_date is null)')
             sql_params['end_date'] = end_date
 
         if area_id:
@@ -469,7 +472,7 @@ class HouseListHandler(BaseHandler):
             if not page_data:
                 break
             house_data[page+i] = json.dumps(dict(errno=RET.OK, errmsg='OK', houses=page_data, total=total))
-            i +=1
+            i += 1
 
         # 存入redis中
         try:
