@@ -4,8 +4,8 @@
 from qiniu import Auth, put_data
 import qiniu.config
 #需要填写你的 Access Key 和 Secret Key
-access_key = '73WBXdczhnRIANG4c6fTXt9dhip1bIl0UsiN43rV'
-secret_key = 'mhI4nmBjJfatXqRlrmOY1MjV69k_bBnoDp08lcNE'
+access_key = ''
+secret_key = ''
 
 
 def storage(image_data):
